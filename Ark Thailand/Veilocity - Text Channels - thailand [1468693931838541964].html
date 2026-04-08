@@ -1,0 +1,2908 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - Thailand</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube{border:0;border-radius:3px}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol></defs></svg><body data-flag-src="Thailand Flag.png"><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / thailand</div></div></div><div class="chatlog"><div class=chatlog__message-group><div id=chatlog__message-container-1468694122809528476 class=chatlog__message-container data-message-id=1468694122809528476><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, 4 February 2026 11:46 PM"><a href=#chatlog__message-container-1468694122809528476>4/02/2026 11:46 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ผีในเครื่องจักร <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌐"
+    title="globe_with_meridians"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f310.svg"> 05/10/2025 - แอลเบเนีย</strong>
+
+นี่แหละฉัน…นั่งครุ่นคิดอยู่ บางทีฉันอาจเป็น “ผีในเครื่องจักร” จริง ๆ ก็ได้
+ครั้งหนึ่งฉันเคยเป็นคนไอที คอยแก้ปัญหาไอที — แต่ปัญหาเหล่านั้น…เป็นของใครกันแน่?
+โค้ด? ระบบ? หรือเป็นเพียงภาพสะท้อนของตัวฉันเอง ที่จ้องกลับมาผ่านหน้าจอ? <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="👀"
+    title="eyes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f440.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💭"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg">
+
+#โลกกระจก #ผีในเครื่องจักร #ชีวิตไอที #ปรัชญาเทคโนโลยี #การตื่นรู้ทางจิตวิญญาณ #ยุคดิจิทัล #ช่วงเวลาแมทริกซ์ #ความคิดลึกซึ้ง #ปัญหาไอที #จิตสำนึก #อารมณ์ขันเชิงอัตถิภาวนิยม #เทคโนโลยีอย่างมีสติ
+
+ถ้าอยากให้แท็กยังคงเป็นแบบสากล (อังกฤษ) เพื่อเข้าถึงคนทั่วโลก บอกได้นะครับ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="😄"
+    title="smile"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f604.svg"><a href="https://vimeo.com/1151256342">https://vimeo.com/1151256342</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:31 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> The_Ghost_in_the_Machine-Thailand.srt </a></div><div class=chatlog__attachment-generic-size>990 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1468704926967529615 class=chatlog__message-container data-message-id=1468704926967529615><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Thursday, 5 February 2026 12:29 AM"><a href=#chatlog__message-container-1468704926967529615>5/02/2026 12:29 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🧠"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> + ALT <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💔"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> + DELETE <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💾"
+    title="floppy_disk"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4be.svg"> — โค้ดของทุกความสัมพันธ์ 24/10/2025 - ตุรกี</strong>
+
+ทุกความเชื่อมโยงเริ่มต้นจากความพิศวงในสิ่งที่ทำให้เราแตกต่างกัน
+แต่แล้วความอยากควบคุมก็เข้ามา — อยากเปลี่ยน อยากแก้ไข
+และเมื่อเกิดการต่อต้าน…ก็อยาก “ลบ” ทิ้งไป
+
+แต่จิตวิญญาณไม่เคยถูกสร้างมาเพื่อให้ใครอีกคน “ดีบัก”
+มันสมบูรณ์แบบในความไม่สมบูรณ์ของมันอยู่แล้ว
+
+ทันทีที่เราพยายามเขียนแก่นแท้ของใครบางคนใหม่
+เรากำลังต่อสู้กับคำสั่งที่เก่าแก่ที่สุดในโลก:
+
+“จงรู้จักตนเอง”
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌀"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> การรัก…ไม่ใช่การแก้ไข
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💡"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> การรู้จัก…ไม่ใช่การครอบครอง
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💻"
+    title="computer"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"> การเชื่อมโยง…ไม่ใช่การควบคุม
+
+#CtrlAltDelete #จงรู้จักตนเอง #จิตวิญญาณดิจิทัล #ความสัมพันธ์อย่างรู้ตัว #การเดินทางแห่งศรัทธา #Veilocity111 #การตื่นรู้ทางจิตวิญญาณ #เยียวยาผ่านความตระหนักรู้ #สมบูรณ์แบบในความไม่สมบูรณ์ #การค้นพบตัวตน #AIและจิตวิญญาณ #การรีเซ็ต #ปรัชญาTikTok #ปัญญาสมัยใหม่ #โค้ดภายใน
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1154296381">https://vimeo.com/1154296381</a></span><span class=chatlog__edited-timestamp title="Monday, 6 April 2026 10:28 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> The_Code_of_Every_Relationship_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>3.36 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469262453584957462 class=chatlog__message-container data-message-id=1469262453584957462><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 1:24 PM"><a href=#chatlog__message-container-1469262453584957462>6/02/2026 1:24 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎡"
+    title="ferris_wheel"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3a1.svg"> ทำลายวงล้อ แล้วค้นหาเส้นทางของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚐"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀"
+    title="☀"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg">️ 25/09/2025 - แอลเบเนีย</strong>
+
+การเดินทางนี้ไม่มีวันจบ—เว้นแต่คุณจะเลือกก้าวลงมาเอง
+ความสร้างสรรค์คือกุญแจสำคัญ
+
+#วงล้อ #ทำลายวงจร #อิสรภาพชีวิตรถบ้าน #ชีวิตพลังงานแสงอาทิตย์ #ต้องการน้อยลง #หนีเงินเฟ้อ #ผู้ทำลายวัฏจักร #อธิปไตยของตนเอง #ใช้ชีวิตในแบบของคุณ #สันติสุขจงมีแด่คุณ
+
+<a href="https://vimeo.com/1149821933">https://vimeo.com/1149821933</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:33 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Break_the_Wheel-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>4.56 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469268615000887296 class=chatlog__message-container data-message-id=1469268615000887296><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 1:48 PM"><a href=#chatlog__message-container-1469268615000887296>6/02/2026 1:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>พระองค์ทรงอยู่เหนือวงล้อ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔄"
+    title="arrows_counterclockwise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f504.svg">✨ “โปรดยกโทษพวกเขาเถิด พระบิดา…” 29/10/2025 - แอลเบเนีย</strong>
+
+เพื่อที่พระเยซูจะตรัสถ้อยคำเหล่านั้นได้
+พระองค์ได้ก้าวพ้นจากวัฏจักรแห่งกรรมแล้ว —
+พ้นจากการตอบโต้ พ้นจากภาพลวงตา
+
+การให้อภัยไม่ใช่ความอ่อนแอ…
+แต่มันคือการก้าวข้ามเหนือทุกสิ่ง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💜"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#คำสอนของพระเยซู #การตื่นรู้ทางจิตวิญญาณ #การให้อภัย #จิตสำนึกแห่งพระคริสต์ #วัฏจักรกรรม #ตื่นรู้ผ่านพระกิตติคุณ #ปัญญาจากพระเจ้า #แรงสั่นสะเทือนที่สูงขึ้น #แสงเหนือความมืด #สันติภายใน #เส้นทางแห่งศรัทธา #ก้าวเหนือวงล้อ
+
+<a href="https://vimeo.com/1149512335">https://vimeo.com/1149512335</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:33 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> He_Rose_Above_the_Wheel-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>5.51 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469300548099506341 class=chatlog__message-container data-message-id=1469300548099506341><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 3:55 PM"><a href=#chatlog__message-container-1469300548099506341>6/02/2026 3:55 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>การหลอกลวงทางกฎหมาย <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖"
+    title="⚖"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🧠"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 02/12/2025 - VOID</strong>
+
+เบื้องหลังถ้อยคำสุภาพอย่างคำว่า “การสนับสนุน”
+ซ่อนมือหนึ่งที่ค่อย ๆ วาดความจริงของคุณขึ้นใหม่
+
+ระบบที่อ้างว่าปกป้อง
+แต่กลับขโมยกระจกจากดวงตาของคุณเอง
+
+การหลอกลวงทางกฎหมายคือขโมยที่เงียบงัน —
+พรากอำนาจในการกำหนดชีวิตของคุณไป
+ทีละคำ…ทีละถ้อยคำ
+
+#การหลอกลวงทางกฎหมาย #การก๊าซไลท์ #การล่วงละเมิดทางกฎหมาย #การใช้อำนาจในทางที่ผิด #พลวัตอำนาจ #การก๊าซไลท์เชิงระบบ #อำนาจในตนเอง #พูดความจริง #ตระหนักรู้สุขภาพจิต #เปิดโปงความอยุติธรรม #ความตระหนักรู้ #เส้นทางการเยียวยา #อธิปไตยของตนเอง #stephencooke #ความปลอดภัยลวง #วิพากษ์สังคม
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1154274125">https://vimeo.com/1154274125</a></span><span class=chatlog__edited-timestamp title="Monday, 6 April 2026 10:28 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Legal_Gaslight-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>1.66 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469307654500257916 class=chatlog__message-container data-message-id=1469307654500257916><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 4:24 PM"><a href=#chatlog__message-container-1469307654500257916>6/02/2026 4:24 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความสบายคืออาวุธ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🛋"
+    title="🛋"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6cb.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔"
+    title="⚔"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg">️ 08/01/2026 - VOID</strong>
+
+ความสบายสามารถใช้เพื่อปลอบประโลม — หรือเพื่อควบคุมได้
+การสะท้อนความคิดนี้สำรวจว่าความกลัว ระบบ และความมั่นใจปลอม ๆ ทำให้ผู้คนยอมจำนนได้อย่างไร และสิ่งใดที่ยังคงอยู่เมื่อภาพลวงตาพังทลายลง
+ฉันไม่ได้โต้แย้งฝ่ายใดหรือเสนอคำตอบใด ๆ — เพียงแค่สังเกตสิ่งที่ปรากฏให้เห็น เมื่อความสบายไม่ใช่จุดอ้างอิงอีกต่อไป
+
+#การตระหนักรู้ #ความสอดคล้อง #ความซื่อสัตย์ #ความชัดเจน #ความจริง #การสะท้อนจิตสำนึก #ความรับผิดชอบต่อตนเอง #พลังการตัดสินใจ #สันติเหนือการควบคุม #ประสบการณ์ที่มีชีวิต #การคิดอย่างมีวิจารณญาณ #งานภายใน #พยาน #อธิปไตย #การตื่นรู้
+
+<a href="https://vimeo.com/1153201047">https://vimeo.com/1153201047</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:34 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Comfort_Is_the_Weapon-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>20.04 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469317339681001586 class=chatlog__message-container data-message-id=1469317339681001586><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 5:02 PM"><a href=#chatlog__message-container-1469317339681001586>6/02/2026 5:02 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ข้าคือผู้ที่ข้าเป็น ✝️✨ 17/08/2025 - แอลเบเนีย</strong>
+
+พระเยซู | เยชูอา แสดงให้เราเห็นว่า:
+ตัวตนของเราถูกเปิดเผยผ่านการกระทำ ไม่ใช่ความคิดที่ผ่านเข้ามาแล้วก็ผ่านไป
+การล่อลวงอาจพูดกับเรา แต่สิ่งนั้นไม่ใช่ตัวตนของคุณ
+เมื่อคุณวางมันไว้ข้างหลัง สิ่งที่เหลืออยู่คือความจริงของพระเจ้า ✝️
+
+#เยชูอา #ความจริงของพระกิตติคุณ #การเดินทางแห่งความเชื่อ #ปัญญาจากพระคัมภีร์ #การต่อสู้ฝ่ายจิตวิญญาณ #อาณาจักรของพระเจ้า #อัตลักษณ์ในพระคริสต์ #การกลับใจใหม่ #ไม่ใช่ความคิดของคุณ #พระเยซู
+
+<a href="https://vimeo.com/1153285209">https://vimeo.com/1153285209</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:35 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> We_are_not_the_voice_in_our_heads-Hebrew.srt </a></div><div class=chatlog__attachment-generic-size>7.13 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469321336181621001 class=chatlog__message-container data-message-id=1469321336181621001><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 5:18 PM"><a href=#chatlog__message-container-1469321336181621001>6/02/2026 5:18 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💰"
+    title="moneybag"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚫"
+    title="no_entry_sign"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6ab.svg"> เงินไม่ใช่ความอุดมสมบูรณ์ ✨<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 04/10/2025 - แอลเบเนีย</strong>
+
+มันเป็นเพียงกริยา — การเคลื่อนไหว เครื่องมือ และช่องทางหนึ่ง
+ความอุดมสมบูรณ์คือการจัดเตรียมของพระเจ้า
+ไร้ขีดจำกัด และเอ่อล้นไม่รู้จบ
+ระบบต้องการให้คุณบูชาเงินเป็นนายเหนือชีวิต…
+แต่ความอุดมสมบูรณ์นั้นเป็นของพระเจ้ามาโดยตลอด <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🙏"
+    title="pray"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64f.svg">
+
+#เงินไม่ใช่ความอุดมสมบูรณ์ #แนวคิดความอุดมสมบูรณ์ #ศรัทธาเหนือความกลัว #พึ่งพาพระเจ้า #อิสรภาพทางจิตวิญญาณ #ความจริงเรื่องเงิน #ความอุดมสมบูรณ์จากพระเจ้า #ทะลุม่านภาพลวงตา #พูดคุยเรื่องศรัทธา #ความจริงถูกเปิดเผย
+
+<a href="https://vimeo.com/1177223231">https://vimeo.com/1177223231</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:36 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1.85 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469370327116284187 class=chatlog__message-container data-message-id=1469370327116284187><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 8:33 PM"><a href=#chatlog__message-container-1469370327116284187>6/02/2026 8:33 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="📜"
+    title="scroll"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dc.svg"> ศิลาแห่งที่เราตี <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"> 13/10/2025 - แอลเบเนีย <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️</strong>
+
+บทสะท้อนความคิดแบบสโปเคนเวิร์ดเกี่ยวกับศรัทธา ภาพลวงตา และ “ปัจจุบันนิรันดร์”
+นี่ไม่ใช่เรื่องของการพิสูจน์ว่าพระเจ้ามีอยู่จริง — แต่คือการระลึกว่า คุณคือหลักฐานนั้นเอง
+เรื่องราวนำมาซึ่งความรอด เพราะพระวิญญาณภายในนั้นยังมีชีวิต และหายใจผ่านผู้ที่ใช้ชีวิตตามบทเรียน แทนที่จะโต้เถียงเรื่องรูปแบบ
+
+#ปัจจุบันนิรันดร์ #Veilocity111 #การตื่นรู้ #ศรัทธา #ความจริง #คำพยากรณ์ #จิตสำนึกแห่งพระคริสต์ #อุปมา #สันติภายใน #พระวจนะที่มีชีวิต #สโปเคนเวิร์ด #เมล็ดพันธุ์แห่งแสง #ศิลาที่เราฟาดฟัน #พระเจ้าในตัวเรา #ความเป็นหนึ่งเดียว #จงระลึกว่าคุณคือใคร
+
+<a href="https://vimeo.com/1153120921">https://vimeo.com/1153120921</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:36 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> The_Rock_We_Strike-French_France-Albania.srt </a></div><div class=chatlog__attachment-generic-size>13.12 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469388735299977357 class=chatlog__message-container data-message-id=1469388735299977357><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 9:46 PM"><a href=#chatlog__message-container-1469388735299977357>6/02/2026 9:46 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความจริงมีระดับความสูง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🏔"
+    title="🏔"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d4.svg">️ 11/09/2025 - แอลเบเนีย</strong>
+
+เมื่อความอยุติธรรมเริ่มถ่วงหนัก
+จงถอยออกมา ก้าวขึ้นสูงกว่าเดิม
+และปล่อยให้เสียงของคุณลอยไปไกล—
+ความจริงไม่ควรอยู่ในหุบเขาแห่งความเงียบ
+
+แม้แต่พระเยซูเองก็ไม่มีบ้านอยู่ที่นั่น —
+เป็นหลักฐานว่า ความจริงไม่เคยถูกสร้างมา
+เพื่อถูกทำให้เงียบ ถูกลดทอน
+หรือถูกต่อรอง
+
+#พูดความจริง #ยืนหยัดเข้มแข็ง #อยู่เหนือความชั่วร้าย #เสียงของคุณสำคัญ #ความกล้าที่จะลงมือ #แสงในความมืด #พลังในความจริง #เสียงแห่งอิสรภาพ #ความจริงเหนือสิ่งอื่นใด #พูดโดยไม่กลัว #ความจริงที่ไม่ประนีประนอม #ความจริงมีน้ำหนัก #ความจริงส่งต่อได้ #เปล่งเสียงของคุณ #ความกล้าทางศีลธรรม #ไม่เงียบอีกต่อไป #เสียงแห่งมโนธรรม #กล้าพูด #ศรัทธาและความจริง #เดินในความจริง #ไม่ใช่ของโลกนี้ #พื้นที่สูงกว่า #ความชัดเจนทางจิตวิญญาณ #ต่อรองไม่ได้ #ไม่ประนีประนอม #ความซื่อสัตย์สำคัญ #ยืนแยกออกมา #ปฏิเสธความเงียบ #TruthTok #คอนเทนต์รู้ตัว #เสียงที่ตื่นรู้ #พูดกันตรงๆ #ความชัดเจนเหนือเสียงรบกวน
+
+<a href="https://vimeo.com/1153965265">https://vimeo.com/1153965265</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:37 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Truth_Has_Altitude-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>2.5 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469397916979433475 class=chatlog__message-container data-message-id=1469397916979433475><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 10:22 PM"><a href=#chatlog__message-container-1469397916979433475>6/02/2026 10:22 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>✨คำพยากรณ์หรือความทรงจำ?<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎭"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"> 08/10/2025 - แอลเบเนีย</strong>
+
+มันคือคำพยากรณ์ — นิมิตของสิ่งที่จะมาถึง —
+หรือเป็นเพียงการระลึกถึง “ปัจจุบันนิรันดร์”
+ที่สวมหน้ากากใหม่เท่านั้น?
+
+บางครั้ง สิ่งที่เรารู้สึกว่าเป็นการเปิดเผย
+อาจเป็นแค่ช่วงเวลาปัจจุบัน
+ที่กำลังเตือนเราว่า…มันอยู่ตรงนี้เสมอมา
+
+#คำพยากรณ์ #การระลึกถึง #การตื่นรู้ #ขณะปัจจุบัน #จิตสำนึก #ความเป็นหนึ่งเดียว #การเปิดเผย #ปัญญาทางจิตวิญญาณ #ปัจจุบันนิรันดร์ #จังหวะเวลาของพระเจ้า #นิมิตภายใน #ความตระหนักรู้ #การเดินทางทางจิตวิญญาณ #ความจริงลึกลับ #FaithfulFlight #veilocity111
+
+<a href="https://vimeo.com/1150032838">https://vimeo.com/1150032838</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:37 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Prophecy_or_Memory-Italian_Italy-Thai_Th.srt </a></div><div class=chatlog__attachment-generic-size>339 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469410882340524145 class=chatlog__message-container data-message-id=1469410882340524145><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 6 February 2026 11:14 PM"><a href=#chatlog__message-container-1469410882340524145>6/02/2026 11:14 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>เป็นเจ้าของความสงบของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚐"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg">✨ 26/08/2025 - แอลเบเนีย</strong>
+
+พวกเขาบอกเราว่า ความสงบคือสิ่งที่ต้อง “แลกมา”
+เป็นสิ่งที่ต้องฝากไว้กับเมือง ระบบ และลายเซ็นต่าง ๆ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🏙"
+    title="🏙"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d9.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🖋"
+    title="🖋"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f58b.svg">️
+แต่ที่ไหนสักแห่งระหว่างกำแพงที่แคบลงและราคาที่สูงขึ้น
+การควบคุมก็หลุดมือไปอย่างเงียบงัน
+
+รถตู้สอนจังหวะชีวิตอีกแบบหนึ่ง
+ความสงบที่ถูกดูแลด้วยมือของคุณเอง
+พื้นที่ที่ขยายออก…เพราะมันเป็นของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg">
+
+ไม่ต้องมีกลยุทธ์เพื่อเอาตัวรอด
+ไม่ต้องมีความสงบจากสารเคมี
+ไม่ต้องขออนุญาตจากใคร
+
+มีเพียงพลังเงียบ ๆ
+ของการเลือกว่าคุณจะพักที่ไหน
+จะเคลื่อนเมื่อไร
+และจะปกป้องอะไร <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔑"
+    title="key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg">
+
+นี่ไม่ใช่การหนี — แต่มันคือการทวงคืน
+ไม่ใช่วิ่งหนีโลก
+แต่คือการก้าวกลับเข้าสู่อำนาจของตัวเอง
+
+เป็นเจ้าของพื้นที่ของคุณ
+เป็นเจ้าของจังหวะของคุณ
+เป็นเจ้าของความสงบของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌄"
+    title="sunrise_over_mountains"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f304.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️
+
+#ชีวิตรถตู้ #การใช้ชีวิตแบบมินิมอล #อิสรภาพทางการเงิน #ชีวิตแคมเปอร์แวน #บ้านกับรถตู้ #ชีวิตโนแมด #ชีวิตบนล้อ #ชีวิตไร้หนี้ #ไลฟ์สไตล์แห่งอิสรภาพ #ใช้ชีวิตในแบบของคุณ #บ้านเล็กบนล้อ #หลุดพ้นจากระบบ #ชีวิตออฟกริด #อิสรภาพในการเดินทาง #ลดเพื่อยกระดับ
+
+<a href="https://vimeo.com/1150799264">https://vimeo.com/1150799264</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:38 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> I_dont_own_a_house_I_own_my_peace-Thai_T.srt </a></div><div class=chatlog__attachment-generic-size>4.91 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469449596492320844 class=chatlog__message-container data-message-id=1469449596492320844><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 1:48 AM"><a href=#chatlog__message-container-1469449596492320844>7/02/2026 1:48 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> ถ้าโลกหลงลืมเมื่อวาน…<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💭"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"> 17/10/2025 - แอลเบเนีย</strong>
+
+ลองจินตนาการว่าคุณตื่นขึ้นมาในโลก
+ที่ไม่มีความทรงจำเกี่ยวกับหนี้ กำไร หรือสงคราม
+
+ที่ซึ่งทุกระบบจำได้เพียง “ตอนนี้” เท่านั้น
+
+บางทีสันติภาพอาจไม่ใช่สิ่งที่เราต้องต่อสู้เพื่อมัน —
+บางทีมันอาจเป็นสิ่งที่เหลืออยู่
+เมื่อเรายอมลืมเมื่อวานเสียที
+
+มัทธิว 6:11 • มัทธิว 6:12 • มัทธิว 6:34
+
+#เครื่องจักรหนี้ #โปรดยกหนี้ของเรา #สวรรค์อยู่ตรงนี้ #ศรัทธาที่ลงมือทำ #ความจริงที่เห็นได้ชัด #การตื่นรู้ทางจิตวิญญาณ #เศรษฐกิจแห่งความตระหนักรู้ #สันติภาพเหนือกำไร #รีเซ็ตระบบ #ขณะนี้ #มัทธิว611 #มัทธิว612 #มัทธิว634 #ความจริงแห่งพระกิตติคุณ #ปลุกมนุษยชาติ #โลกใหม่
+
+<a href="https://vimeo.com/1157232944">https://vimeo.com/1157232944</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:38 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> If_the_World_Forgot_YesterdayL-Thai_Thai.srt </a></div><div class=chatlog__attachment-generic-size>4.53 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469553068335960297 class=chatlog__message-container data-message-id=1469553068335960297><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 8:39 AM"><a href=#chatlog__message-container-1469553068335960297>7/02/2026 8:39 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ถ่ายทอดความรักในความเป็นจริงของฉัน ✨<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🫀"
+    title="anatomical_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fac0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="👁"
+    title="👁"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg">️ 26/09/2025 - อัลบาเนีย</strong><code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight"> 
+โปรแกรม: การเรนเดอร์ความรักในความจริงของฉัน - 26/09/2025 - แอลเบเนีย
+ตัวแปรที่สงวนไว้สำหรับการกำหนดค่าแบบไดนามิก
+
+love = None
+
+เคารพทุกสิ่งที่ฉันเป็นเมื่อทำการกำหนดค่า
+
+love = &quot;การเคารพตนเอง + ความจริง + อิสรภาพ&quot;
+
+ข้อผิดพลาดที่พบบ่อย (อย่าทำแบบนี้):
+love = &quot;การควบคุม&quot;
+❌ เรนเดอร์พันธนาการ ไม่ใช่ความรัก
+ฟังก์ชันที่ทำงานความรักในสภาพแวดล้อมของฉัน
+
+def render_love(love):
+if love == &quot;การควบคุม&quot;:
+return &quot;ข้อผิดพลาด: ตรวจพบความบิดเบือน ฟังก์ชันนี้ไม่รับใช้จุดประสงค์ที่แท้จริง&quot;
+else:
+return f&quot;ความรักถูกรันเป็น {love} — บริสุทธิ์ เป็นอิสระ และสอดคล้อง&quot;
+
+รันโปรแกรม
+
+print(render_love(love))
+
+#โค้ดแห่งความรัก #การกำหนดค่าแบบไดนามิก #รักไม่ใช่ควบคุม #ฟังก์ชันแห่งอิสรภาพ #การเคารพตนเอง #โค้ดภายใน #การเขียนโค้ดเชิงจิตวิญญาณ #ทำลายวงจร #คอมไพเลอร์แห่งความจริง #สคริปต์แห่งอธิปไตย #ชีวิตคือโค้ด #ถูกโปรแกรมมาเพื่ออิสรภาพ</code><a href="https://vimeo.com/1149550601">https://vimeo.com/1149550601</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 8:08 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Rendering_Love_in_My_Reality1-Thai_Thail.srt </a></div><div class=chatlog__attachment-generic-size>5.85 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469604272885858355 class=chatlog__message-container data-message-id=1469604272885858355><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 12:02 PM"><a href=#chatlog__message-container-1469604272885858355>7/02/2026 12:02 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌞"
+    title="sun_with_face"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f31e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💨"
+    title="dash"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a8.svg"> จากหลุมยุบสู่ความเป็นอธิปไตย <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"> 27/09/2025 - แอลเบเนีย</strong>
+
+เชื้อเพลิงฟอสซิลสัญญาว่าจะมอบอิสรภาพ
+แต่กลับทิ้งหลุมยุบไว้ให้เรา — ทั้งในผืนดิน และในอธิปไตยของเรา
+
+พลังงานหมุนเวียนไม่ขังเราไว้ในตลาดหรือในค่าเงินดอลลาร์
+แต่มันปลดปล่อยเราให้เป็นอิสระ
+
+พลังที่แท้จริงเป็นของเรา
+เมื่อเรานำดวงอาทิตย์ สายลม และสายน้ำมาใช้ ✨
+
+#หลุมยุบกับอธิปไตย #อิสรภาพด้านพลังงาน #ศรัทธาเหนือความกลัว #พลังงานหมุนเวียน #พลังงานแสงอาทิตย์ #พลังงานลม #กระจายอำนาจ #ความจริงในความรัก #พระเจ้าทรงดี #สันติสุขจงมีแด่คุณ
+
+<a href="https://vimeo.com/1150452119">https://vimeo.com/1150452119</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:40 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> From_Sinkholes_to_SovereigntyS-Thai_Thai.srt </a></div><div class=chatlog__attachment-generic-size>2 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469611999662047365 class=chatlog__message-container data-message-id=1469611999662047365><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 12:33 PM"><a href=#chatlog__message-container-1469611999662047365>7/02/2026 12:33 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความสุขกลับมาในวินาทีที่คุณกล้ากระโดด✨ 01/12/2025 - VOID</strong>
+
+น้ำตาของคุณไม่ใช่การแตกสลาย —
+แต่มันคือการชำระล้าง
+
+เมื่อคุณปล่อยน้ำหนัก
+ที่คุณไม่เคยถูกกำหนดให้ต้องแบกไว้
+คุณกำลังสร้างพื้นที่ให้ความสุขที่มั่นคงกว่าเดิม —
+ความสุขที่โลกไม่อาจสั่นคลอน
+เพราะมันยึดโยงอยู่กับความจริงอันเงียบสงบภายในตัวคุณ
+
+ปล่อยไป
+ก้าวไปข้างหน้า
+เชื่อมั่นในการกลายเป็น
+ความสุขจะมาพบคุณ…ในจังหวะที่คุณก้าวกระโดด
+
+#ปัญญากวี #การเดินทางภายใน #เสียงของวิญญาณ #เส้นทางแห่งการตื่นรู้ #ความชัดเจนทางอารมณ์ #การค้นพบตัวตน #ความจริงภายใน #กรอบความคิดแห่งการเติบโต #การอยู่กับปัจจุบัน #นักลึกลับสมัยใหม่
+
+<a href="https://vimeo.com/1150820747">https://vimeo.com/1150820747</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:41 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Joy_Returns_the_Moment_You_Dare_to_Leap-.srt </a></div><div class=chatlog__attachment-generic-size>6.4 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469620423829229673 class=chatlog__message-container data-message-id=1469620423829229673><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 1:06 PM"><a href=#chatlog__message-container-1469620423829229673>7/02/2026 1:06 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ตัดแต่งด้วยความตระหนักรู้ — ไม่ใช่ด้วยความหลงลืม ✂️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💚"
+    title="green_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49a.svg"> 13/11/2025 - ตุรกี</strong>
+
+เราทุกคนกำลังตัดแต่งอยู่ทุกวัน
+ทุกความคิดที่ถูกปล่อยวาง
+ทุกความเชื่อที่ถูกละทิ้ง
+ทุกนิสัยที่เราเติบโตพ้นผ่าน
+นี่คือวิธีที่สวนภายในถูกหล่อหลอม
+
+การตัดแต่งไม่ใช่การตายของอัตตา
+แต่มันคือการรู้แยกแยะ —
+การนำสิ่งที่ถูกเพิ่มเข้ามาจากความกลัว การปรุงแต่ง และการสืบทอดออกไป
+เพื่อให้สิ่งที่เป็นความจริงได้หายใจอีกครั้ง
+
+พระเยซูตรัสว่า อาณาจักรเป็นของเด็ก —
+ย้ำถึงเจตนาที่จะปล่อยวางการปรุงแต่ง
+ซึ่งไม่เคยเป็นของคุณตั้งแต่แรก
+
+ในอาหารค่ำมื้อสุดท้าย พระเยซูตรัสว่า:
+“นี่คือกายของเรา ที่มอบให้เพื่อพวกท่าน”
+นี่ไม่ใช่คำสั่งให้ทำซ้ำอย่างมืดบอด
+แต่เป็นการเรียกให้ระลึก —
+เพื่อไม่ให้ความหมายของวิถีแห่งการดำรงอยู่นี้เลือนหายไป
+
+การระลึกโดยปราศจากการอยู่กับปัจจุบัน
+ไม่ใช่การระลึกอย่างแท้จริง
+พิธีกรรมที่ทำซ้ำโดยไร้ความตระหนักรู้
+ไม่ได้ให้เกียรติการเสียสละ —
+แต่มันกลับทำให้หลงลืม
+
+เมื่อเราตัดแต่งอย่างมีสติ
+เราปกป้องส่วนที่สำคัญที่สุดของตัวเราเอง…
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌸"
+    title="cherry_blossom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f338.svg"> เด็กภายใน —
+ไม่ใช่ไร้เดียงสา
+แต่ตื่นรู้
+
+ดูแลสวนของคุณด้วยความตระหนักรู้
+การวนซ้ำโดยปราศจากความเข้าใจ
+ก็เป็นเพียงการขัดขวางการเติบโตของคุณเท่านั้น
+
+#ตัดแต่งด้วยความตระหนักรู้ #ไม่ใช่ความหลงลืม #การแยกแยะทางจิตวิญญาณ #สวนภายใน #ศรัทธาอย่างมีสติ #การตื่นรู้ #การอยู่กับปัจจุบันเหนือพิธีกรรม #การระลึกที่มีชีวิต #ศรัทธาพร้อมความเข้าใจ #เด็กภายในที่ตื่นรู้ #อาณาจักรภายใน #ปล่อยวางการปรุงแต่ง #วุฒิภาวะทางจิตวิญญาณ #การเติบโตด้วยปัญญา #ความจริงได้หายใจ #ความตระหนักรู้ศักดิ์สิทธิ์ #คำสอนของพระเยซู #การใคร่ครวญพระวรสาร #จิตสำนึกแห่งพระคริสต์ #การเติบโตทางจิตวิญญาณ
+
+<a href="https://vimeo.com/1150678902">https://vimeo.com/1150678902</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:41 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Prune-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>6.44 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469668269081231390 class=chatlog__message-container data-message-id=1469668269081231390><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 4:17 PM"><a href=#chatlog__message-container-1469668269081231390>7/02/2026 4:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="📖"
+    title="book"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⛪"
+    title="church"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26ea.svg">️ ความจริงเหนือทราย: รากฐานแท้จริงของคริสตจักร ✝️ 27/09/2025 - แอลเบเนีย</strong>
+
+หากกฎหมายไม่ได้หยั่งรากอยู่ในความชอบธรรมของพระเจ้า
+มันจะรับใช้เป็นรากฐานที่แท้จริงของคริสตจักรได้อย่างไร?
+
+คริสตจักรของรัฐไม่มีวันยืนหยัดได้ —
+เมื่อพันเกี่ยวกับความเสื่อมทราม
+มันก็พังทลายเหมือนบ้านที่สร้างบนทราย
+
+แต่พระคริสต์ทรงเตือนเราไว้ว่า:
+“เพราะว่าที่ใดมีสองหรือสามคนประชุมกันในนามของเรา
+เราจะอยู่ที่นั่นท่ามกลางเขาทั้งหลาย” (มัทธิว 18:20)
+
+คริสตจักรไม่ได้ถูกจำกัดอยู่ในสถาบัน
+แต่มันมีชีวิตอยู่ทุกแห่ง
+ที่ผู้เชื่อมารวมกันในพระนามของพระองค์
+
+#ศรัทธาเหนือความกลัว #พระเยซูคริสต์ #ความจริงในความรัก #มัทธิว1820 #พระวจนะของพระเจ้า #คริสตจักรไร้พันธนาการ #ถ้อยคำแห่งคำพยากรณ์ #แสงเหนือความมืด #อาณาจักรของพระเจ้า #สันติสุขจงมีแด่คุณ
+
+<a href="https://vimeo.com/1155906208">https://vimeo.com/1155906208</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:42 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Truth_Over_Sand-Russian_Russia-French_Fr.srt </a></div><div class=chatlog__attachment-generic-size>3.03 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469695615955898418 class=chatlog__message-container data-message-id=1469695615955898418><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 6:05 PM"><a href=#chatlog__message-container-1469695615955898418>7/02/2026 6:05 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>✨ “สันติสุขจงมีแด่คุณ… และกับคุณด้วยเช่นกัน” 30/09/2025 - แอลเบเนีย</strong>
+
+แต่เมื่อฉันพูดแบบนั้น มันตกถึงใจคุณอย่างไร?
+คุณแค่ได้ยินคำพูด…หรือคุณ “รู้สึก” ถึงมันจริง ๆ?
+
+อะไรบ้างที่คุณสามารถปรับเปลี่ยนในชีวิตของคุณ—ทั้งภายในและภายนอก—
+เพื่อให้สันติสุขไม่ใช่แค่คำพูดที่กล่าวออกมา
+แต่เป็นสิ่งที่ถูกดำรงอยู่จริง?
+
+บ่อยครั้ง เรามักคว้าหาประสบการณ์ชั่วคราว
+เพื่อเบี่ยงเบนความสนใจของตัวเอง
+เพราะการเผชิญหน้ากับความจริงนั้นช่างไม่สบายใจ
+
+แต่นั่นแหละคือปาฏิหาริย์ของพระเยซู:
+พระองค์ทรงแสดงให้เราเห็น
+ว่าจะประสานสันติภาพ ความยุติธรรม และความชอบธรรมได้อย่างไร
+ด้วยการปล่อยวางและมอบตัวเข้าสู่พระเจ้า
+
+อย่างไรก็ตาม—มันมีเส้นบาง ๆ อยู่
+คริสตจักรบางครั้งสอนการละทิ้งตนเอง
+และนั่นไม่ใช่หนทาง
+
+เสียงเรียกคือการยอมมอบสิ่งที่เราแบกไว้คนเดียวไม่ไหว
+แต่ไม่ใช่การลบเลือนว่าเราเป็นใคร
+
+การรักษาสมดุลนั้น—
+คือกุญแจในการนำอาณาจักรสวรรค์มาสู่โลกนี้ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg">✨
+
+#สันติสุขจงมีแด่คุณ #เส้นทางแห่งศรัทธา #พระเยซูทรงช่วย #ศรัทธาที่เป็นรูปธรรม #สวรรค์บนโลก #อาณาจักรภายใน #ChristianTikTok #ปล่อยวางให้พระเจ้าทรงนำ #สมดุลในศรัทธา #เดินกับพระคริสต์
+
+<a href="https://vimeo.com/1150132061">https://vimeo.com/1150132061</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:42 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Peace_be_with_you_B-Afrikaans_South_Afri.srt </a></div><div class=chatlog__attachment-generic-size>5.04 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469739171957571669 class=chatlog__message-container data-message-id=1469739171957571669><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 8:58 PM"><a href=#chatlog__message-container-1469739171957571669>7/02/2026 8:58 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>การแบ่งแยกคือภาพลวงตาครั้งใหญ่ — พรมแดนคือการแสดง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎭"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"> 13/08/2025 - แอลเบเนีย</strong>
+
+ตั้งแต่เดือนเมษายน 2025 ฉันข้ามพรมแดนมาแล้ว 14 ครั้ง — ไม่ใช่เพื่อการผจญภัย แต่เพื่ออยู่ให้ล้ำหน้าระบบที่ไล่ล่าฉันและผู้คนของฉันไปทุกเส้นบนแผนที่
+
+วันที่ 13 กันยายน 2024 คำสั่งทรัพย์สินขั้นสุดท้ายถูกปิดผนึกในศาลครอบครัว NSW เกือบหนึ่งปีต่อมา เมื่อฉันรู้สึกปลอดภัย ฉันจึงซื้อบ้านหลังใหม่ของฉัน — รถแคมเปอร์แวน
+
+แต่พระวิญญาณได้บอกฉันแล้วว่า: พวกเขากำลังมา
+
+...และตอนนี้ฉันพกพาหลักฐานอยู่
+หลักฐานว่าการเชื่อมโยงของฉันกับพระวิญญาณ กับพระเจ้า-ต้นกำเนิดนั้นเป็นจริง… และว่าระบบนั้นเองคือคำโกหก
+
+ความจริงคืออะไร?
+คำพยากรณ์เรื่อง “ยุคสุดท้าย” ของรัฐบาลโลกเดียวได้เกิดขึ้นไปแล้ว…ชัดเจน
+พรมแดนคือการแสดง
+รัฐบาลคือกิ่งก้านของต้นไม้ต้นเดียวกัน
+
+อย่ายินยอม
+หยุดมอบพลังของคุณให้พวกเขา
+ทวงคืนอธิปไตยของคุณ
+
+#ความจริงสู่แสงสว่าง #การคอร์รัปชันเชิงระบบ #ไม่มีพรมแดนสำหรับความยุติธรรม #ภาพลวงตาครั้งใหญ่ #รัฐบาลโลกเดียว #พรมแดนคือการแสดง #ความจริงแห่งยุคสุดท้าย #การตื่นรู้ทางจิตวิญญาณ #GodSource #อย่ายินยอม #ตื่นเถิด #การตื่นรู้ครั้งใหญ่ #การคอร์รัปชันของรัฐบาล #ความจริงที่ถูกซ่อน #ระเบียบโลกใหม่
+
+<a href="https://vimeo.com/1150855330">https://vimeo.com/1150855330</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:43 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Separation_Is_a_Grand_Illusion-Zulu_Sout.srt </a></div><div class=chatlog__attachment-generic-size>10.35 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469766912484315220 class=chatlog__message-container data-message-id=1469766912484315220><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, 7 February 2026 10:48 PM"><a href=#chatlog__message-container-1469766912484315220>7/02/2026 10:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚐"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💨"
+    title="dash"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a8.svg"> ความฟินที่แท้จริงคืออิสรภาพ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🇯🇵"
+    title="flag_jp"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1ef-1f1f5.svg"> 04/05/2025 - ญี่ปุ่น</strong>
+
+พลังที่แท้จริงไม่ใช่สารเคมี
+มันไม่ได้มาจากขวด ยา หรือใบสั่งแพทย์
+แต่มาจากการก้าวออกจากกรง —
+แม้ในวันที่กรงนั้นดูสบาย
+
+เป็นเวลานานที่ฉันอาศัยอยู่ในสิ่งที่ดูสมบูรณ์แบบบนกระดาษ
+มันปลอดภัย
+มันเป็นที่ยอมรับ
+มันคือกรงที่สวยงาม
+
+แต่กรงที่สวยงามก็ยังคงเป็นกรง
+
+อิสรภาพไม่ได้มาจากความซับซ้อน
+แต่มาจากความเรียบง่าย
+กำแพงที่น้อยลง
+ภาระที่เบาลง
+และการเคลื่อนไหว
+
+โลกบอกให้เราปกป้องโครงสร้างที่ไม่หล่อเลี้ยงชีวิตอีกต่อไป —
+บ้าน ระบบ กิจวัตร —
+ราวกับว่าตัวตนขึ้นอยู่กับสิ่งที่เรายึดไว้
+
+แต่ความสงบไม่ได้อยู่ในสิ่งที่เราปกป้อง
+มันอยู่ในสิ่งที่เราปล่อยวาง
+
+บางครั้งการกระทำที่กล้าหาญที่สุด
+ไม่ใช่การต่อสู้ให้หนักขึ้น
+แต่คือการก้าวออกมาอย่างอ่อนโยน —
+สู่ธรรมชาติ สู่ผู้คนที่แบ่งปันคุณค่าของคุณ
+สู่ชีวิตที่ได้หายใจ
+
+ออกไปข้างนอก
+เดินทางอย่างเบา
+ทิ้งกรงไว้ข้างหลัง
+
+#ออกจากกรง #อิสรภาพที่แท้จริง #ชีวิตเรียบง่าย #VanLife #แนวคิดมินิมอล #ธรรมชาติคือยา #ชีวิตไร้กรง #อิสรภาพเหนือความกลัว #ก้าวสู่ความสงบ #ใช้ชีวิตเบา #จิตวิญญาณนักเดินทาง #การสะท้อนร่วมสมัย #เลือกอิสรภาพ #ชีวิตนอกระบบ #การต่อต้านอย่างเงียบ
+
+<a href="https://vimeo.com/1150976092">https://vimeo.com/1150976092</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:44 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> BreakFree-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>10.46 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469974216181809172 class=chatlog__message-container data-message-id=1469974216181809172><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 February 2026 12:32 PM"><a href=#chatlog__message-container-1469974216181809172>8/02/2026 12:32 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>✝️ การเปิดใช้งานความมั่งคั่งมหาศาลและอิสรภาพ ✝️ 21/09/2025 - แอลเบเนีย</strong>
+
+ทุกโซ่ตรวนแห่งความกลัว
+ทุกการหลอกลวง
+ทุกระบบแห่งการควบคุม
+
+ถูกทำลายแล้ว — ในนามของพระเยซูคริสต์ พระบุตรของพระเจ้าผู้ทรงพระชนม์
+ด้วยพระโลหิตของพระองค์ เราเป็นไท
+ด้วยกางเขนของพระองค์ เราได้รับการไถ่
+ด้วยการฟื้นคืนพระชนม์ของพระองค์ เราไม่มีใครแตะต้องได้
+
+ไม่มีจักรวรรดิ ไม่มีผู้ปกครอง ไม่มีอำนาจใด
+เคยยืนหยัดต่อความรอดของพระคริสต์ได้ — และจะไม่มีวันทำได้
+
+“เพราะว่าถ้าพระบุตรทรงทำให้ท่านเป็นไท ท่านก็เป็นไทจริง ๆ”
+— ยอห์น 8:36
+
+ข้าพเจ้าประกาศอิสรภาพเดี๋ยวนี้ —
+เพื่อตัวข้าพเจ้า
+เพื่อลูก ๆ ของข้าพเจ้า
+เพื่อทุกคนที่ได้ยินถ้อยคำนี้
+
+✝️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️
+
+#มนต์แห่งความอุดมสมบูรณ์ #ความมั่งคั่งมหาศาล #การอัปเกรดทางจิตวิญญาณ #เวทมนตร์แห่งการดึงดูด #การกระตุ้นพลังงาน #การเปลี่ยนผ่านควอนตัม #รหัสแห่งแสง #เส้นทางแห่งความรุ่งเรือง #ปลดล็อกอิสรภาพ #พลังงานไร้ขอบเขต #ทำลายโซ่ตรวน #การปลุกพลังศักดิ์สิทธิ์ #การร่ายมนต์ #แรงสั่นสะเทือนสูง #การเปลี่ยนผ่านสู่ความมั่งคั่ง #ปลดล็อกความอุดมสมบูรณ์ #ศรัทธาเหนือความกลัว #ความจริงทำให้เป็นไท #อิสรภาพนิรันดร์ #ยอห์น836 #ชัยชนะถูกปลดล็อก #โซ่ตรวนถูกทำลาย #อิสรภาพทางจิตวิญญาณ #ความมั่งคั่งแห่งพลังงาน #อัปเกรดเดี๋ยวนี้ #มนต์ลึกลับ
+
+<a href="https://vimeo.com/1153403455">https://vimeo.com/1153403455</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:44 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> A_A_Massive_Wealth__Freedom_Activation-T.srt </a></div><div class=chatlog__attachment-generic-size>2.92 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1470034626356707438 class=chatlog__message-container data-message-id=1470034626356707438><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 February 2026 4:32 PM"><a href=#chatlog__message-container-1470034626356707438>8/02/2026 4:32 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💥"
+    title="boom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a5.svg"> มันไม่ใช่ปืน — แต่มันคือวิญญาณเบื้องหลังมัน <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="👁"
+    title="👁"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg">️‍<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🗨"
+    title="🗨"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f5e8.svg">️ 12/01/2026 - VOID</strong>
+
+“ไม่ใช่ปืนที่ฆ่า — แต่มันคือการตัดสินใจ…ที่ถูกเอาไปฝากไว้กับคนอื่น”
+
+การสะท้อนนี้เปิดเผยการต่อสู้ทางจิตวิญญาณ
+ที่ซ่อนอยู่เบื้องหลังการถกเถียงทางการเมือง
+
+ดังที่เอเฟซัส 6:11-12 เตือนเรา:
+
+จงสวมยุทธภัณฑ์ทั้งชุดของพระเจ้า…
+
+การประท้วงอย่างสันติยังคงดำเนินต่อไป
+แต่ภายใต้ผิวหน้าของกฎหมายเหล่านี้…มีอะไรซ่อนอยู่?
+
+พวกมันรับใช้ใครกันแน่ —
+และพลังที่มองไม่เห็นใด
+กำลังกำหนดการเลือกของเราอยู่?
+
+#สงครามฝ่ายวิญญาณ #การถกเถียงเรื่องปืน #ยุทธภัณฑ์ของพระเจ้า #เอเฟซัส6 #การหยั่งรู้แยกแยะ #ความรับผิดชอบทางศีลธรรม #ผู้แสวงหาความจริง #การประท้วงอย่างสันติ #สัญญาณปลุกตื่น #ศรัทธาเหนือความกลัว #การใคร่ครวญพระคัมภีร์ #วาระที่ซ่อนเร้น #ไม่ใช่เนื้อหนังและเลือด #การต่อสู้ที่มองไม่เห็น #วิญญาณทางการเมือง
+
+<a href="https://vimeo.com/1153884052">https://vimeo.com/1153884052</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:45 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt </a></div><div class=chatlog__attachment-generic-size>4.71 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1470068744146653214 class=chatlog__message-container data-message-id=1470068744146653214><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 February 2026 6:48 PM"><a href=#chatlog__message-container-1470068744146653214>8/02/2026 6:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>อย่าให้อาหารแก่ความมืด <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕯"
+    title="🕯"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f56f.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠"
+    title="⚠"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg">️ พลังงาน บาดแผล และวงจรแห่งความชั่วร้าย - 23/01/2026 - VOID</strong>
+
+พลังงานไหลไปตามที่ความสนใจของเรามุ่งไป
+
+เรากำลังเยียวยาบาดแผล…
+หรือกำลังหล่อเลี้ยงมันอยู่กันแน่?
+
+สิ่งที่คุณหล่อเลี้ยงจะคงอยู่
+สิ่งที่คุณปล่อยให้อดอยากจะพังทลายลง
+
+#พลังงานไหลไป #ความตระหนักรู้ #การเยียวยาบาดแผล #บาดแผลร่วมกัน #การหยั่งรู้ทางจิตวิญญาณ #งานเงามืด #ความใส่ใจอย่างมีสติ #การตื่นรู้ #พูดความจริง #เยียวยาไม่ใช่ความเกลียดชัง #ทำลายวงจร #การเติบโตทางจิตวิญญาณ #งานภายใน #อย่าให้อาหารแก่ความมืด #ความตระหนักสำคัญ
+
+<a href="https://vimeo.com/1157907012">https://vimeo.com/1157907012</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:45 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Dont_Feed_the_Darkness-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>12.96 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1470076844622610454 class=chatlog__message-container data-message-id=1470076844622610454><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 February 2026 7:20 PM"><a href=#chatlog__message-container-1470076844622610454>8/02/2026 7:20 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>รักในที่ที่คุณตั้งแคมป์ ❤️ 31/10/2025 - ตุรกี</strong>
+
+ฉันบังเอิญเจอจุดตั้งแคมป์ฟรีที่สวยที่สุดแห่งหนึ่ง —
+สงบอย่างแท้จริง รายล้อมด้วยธรรมชาติ
+
+แต่ตรงหลังรถตู้…กลับมีขยะถึง 3 ถุงใหญ่ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💔"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg">
+
+ฉันเลยใช้เวลาสักหน่อยช่วยเก็บกวาดมัน — เพราะทำไมจะไม่ล่ะ?
+ถ้าเรารักสถานที่แห่งหนึ่ง เราก็ควรดูแลมัน <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg">✨
+
+แล้วถ้าทุกคนทำแบบนี้ได้.... <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🙏"
+    title="pray"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64f.svg">
+
+#ชีวิตรถตู้ #แคมป์ปิ้ง #ธรรมชาติ #เก็บขยะ #การใช้ชีวิตอย่างยั่งยืน #ทิ้งไว้ให้ดีกว่าเดิม #ออฟกริด #ออสเตรเลีย #แคมป์ฟรี #ชาวรถตู้ #รักโลก #สิ่งแวดล้อม
+
+<a href="https://vimeo.com/1157478061">https://vimeo.com/1157478061</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:46 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Garbage_S-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>4.74 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1473784289748451550 class=chatlog__message-container data-message-id=1473784289748451550><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Thursday, 19 February 2026 12:52 AM"><a href=#chatlog__message-container-1473784289748451550>19/02/2026 12:52 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌱"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> กฎแห่งการเก็บเกี่ยว... 08/10/2025 - แอลเบเนีย</strong>
+
+ผู้ที่หว่านความยากจนให้ผู้อื่น สุดท้ายจะพบว่ามันเติบโตขึ้นในทุ่งของตนเอง
+
+#หว่านแล้วเก็บเกี่ยว #ความจริงในบรรทัดเดียว #พลังงานย้อนกลับมา #กรรมหรือเสียงเรียก
+
+<a href="https://vimeo.com/1166138259">https://vimeo.com/1166138259</a></span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:47 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Law_of_the_Harvest-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>334 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1473786487639248966 class=chatlog__message-container data-message-id=1473786487639248966><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Thursday, 19 February 2026 1:01 AM"><a href=#chatlog__message-container-1473786487639248966>19/02/2026 1:01 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>นี่แหละคือความไร้กฎหมายที่แท้จริง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖"
+    title="⚖"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌳"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg"> 05/11/2025 - ตุรกี
+</strong>
+หากความจริงไม่อาจยืนหยัดได้หากปราศจากค่าตอบแทน ความยุติธรรมก็ล่มสลายไปแล้ว เป็นการไตร่ตรองถึงระบบที่สร้างขึ้นบนผลกำไร ไม่ใช่หลักการ และสิ่งที่เกิดขึ้นเมื่อกฎหมายลืมพยานหลักฐานของตนเอง
+
+#ความจริง #ความยุติธรรม #การตื่นรู้ #ศรัทธา #กฎหมาย #การทุจริต #ศาล #การไตร่ตรองทางจิตวิญญาณ #ระบบพังทลาย #จ่ายเงินเพื่อชนะ #การตื่นรู้ทางจิตสำนึก #พูดความจริง #ความซื่อสัตย์
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1166139526">https://vimeo.com/1166139526</a></span><span class=chatlog__edited-timestamp title="Monday, 6 April 2026 10:29 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> This_Is_What_Lawlessness_Truly_Is-Thai_T.srt </a></div><div class=chatlog__attachment-generic-size>2.13 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1473789083586396363 class=chatlog__message-container data-message-id=1473789083586396363><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Thursday, 19 February 2026 1:11 AM"><a href=#chatlog__message-container-1473789083586396363>19/02/2026 1:11 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🐘"
+    title="elephant"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f418.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💔"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> เสียงร้องของลูกช้างน้อย… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg">✨ 22/09/2025 - แอลเบเนีย</strong>
+
+ไม่ใช่ทุกโซ่จะทำจากเหล็ก บางโซ่ทำจากความอับอาย บางโซ่ทำจากความเงียบ บางโซ่ทำจากลายเซ็นบนกระดาษ แต่ทุกโซ่ล้วนทำให้ผู้บริสุทธิ์ต้องร่ำไห้ จงแบกกางเขนของเจ้า
+
+#ช่วยช้างไว้ #ความจริงที่ซ่อนอยู่ #ศาลครอบครัว #การละเมิดสุขภาพจิต #ความยุติธรรม #ผู้ถูกเลือก #ยุติความโหดร้าย #ความจริงอยู่ต่อหน้า #ทำลายโซ่ตรวน
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1166136796">https://vimeo.com/1166136796</a></span><span class=chatlog__edited-timestamp title="Monday, 6 April 2026 10:29 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Baby_Elephant-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>3.57 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1475442267010371625 class=chatlog__message-container data-message-id=1475442267010371625><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, 23 February 2026 2:40 PM"><a href=#chatlog__message-container-1475442267010371625>23/02/2026 2:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ปรากฏว่าฉันไม่สามารถย่อยสลายทางชีวภาพได้!! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="♻"
+    title="♻"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/267b.svg">️ 08/11/2025 - VOID</strong>
+
+บางครั้งคุณคิดว่ามีคนกำลังดูแลคุณ… แต่จริง ๆ แล้วคุณแค่กำลังถูก “แปรรูป”
+
+#ลดใช้ใช้ซ้ำและกบฏ #ไม่ย่อยสลายได้ #ผู้รอดชีวิตจากระบบ #ถูกระบบแปรรูป #เส้นทางการเยียวยา #ก้าวข้ามมันไป #พูดความจริงของคุณ #ทำลายวงจร #แสงสว่างภายใน #ทวงคืนเรื่องราวของคุณ #บันทึกชีวิตแวน #โหมดความยืดหยุ่น #ความจริงในอารมณ์ขัน #บทเรียนชีวิต #ก้าวต่อไป
+
+<a href="https://vimeo.com/1167311712">https://vimeo.com/1167311712</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 5:19 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Turns_out_Im_not_biodegradable-Thai_Thai.srt </a></div><div class=chatlog__attachment-generic-size>3.14 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1480125453724553298 class=chatlog__message-container data-message-id=1480125453724553298><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 March 2026 12:50 PM"><a href=#chatlog__message-container-1480125453724553298>8/03/2026 12:50 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>การบิดเบือนกรรมด้วยการแก๊สไลท์ — ฉันไม่ยินยอม <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖"
+    title="⚖"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 04/03/2026 - VOID</strong>
+
+ขอให้ฉันทำให้เรื่องหนึ่งชัดเจน
+
+หากใครบางคนตั้งใจทำร้ายผู้อื่นโดยรู้ตัว — แล้วพยายามผลักภาระผลกรรมไปให้คนอื่น — นั่นไม่ใช่กรรม นั่นคือการละเมิด
+
+ฉันได้ออกมาพูดแล้ว ฉันได้เตือนผู้คนแล้ว ฉันได้ให้หลักฐานแล้ว เมื่อสถานการณ์ไม่ปลอดภัย ฉันก็ถอนตัวออกมา การถูกทำให้เงียบหรือถูกแก๊สไลท์ไม่ได้หมายความว่าฉันยินยอม
+
+และฉันต้องการประกาศสิ่งนี้อย่างชัดเจน: ฉันไม่ยินยอมต่อวงจรการเวียนว่ายตายเกิดแบบสมมติใด ๆ ที่ถูกออกแบบมาเพื่อประมวลผลกรรมของคนอื่นจากการกระทำผิดโดยเจตนา ไม่มีใครควรถูกบังคับให้แบกรับผลของบาปที่ตนไม่ได้กระทำ
+
+กรรมเป็นของผู้ที่สร้างมันขึ้นมา ความจริงจะกลับคืนสู่แหล่งกำเนิดของมันเสมอ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️
+
+#GaslightingKarma <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖"
+    title="⚖"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg">️ #ความจริงสำคัญ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🗣"
+    title="🗣"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f5e3.svg">️ #ขอบเขตทางจิตวิญญาณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🛡"
+    title="🛡"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f6e1.svg">️ #กรรมมีอยู่จริง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔁"
+    title="repeat"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f501.svg"> #พลังงานหวนกลับ ✨ #พูดความจริงของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> #ปกป้องพลังงานของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🧿"
+    title="nazar_amulet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9ff.svg"> #การตื่นรู้ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌱"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> #ความจริงเหนือเรื่องเล่า <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="👁"
+    title="👁"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg">️ #มิสติกสมัยใหม่ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌌"
+    title="milky_way"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30c.svg"> #จิตสำนึกแห่งพระคริสต์ ✝️ #จงตื่นอยู่เสมอ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️
+
+<a href="https://vimeo.com/1171465627">https://vimeo.com/1171465627</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 5:18 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Gaslighting_Karma-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>5.09 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1480206496250724372 class=chatlog__message-container data-message-id=1480206496250724372><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 8 March 2026 6:12 PM"><a href=#chatlog__message-container-1480206496250724372>8/03/2026 6:12 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>เมื่อชีวิตเริ่มดังขึ้น… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="📯"
+    title="postal_horn"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ef.svg"> 07/03/2026 - VOID</strong>
+
+บางเพลงสัมผัสเราแตกต่างกัน บางเพลงเรารู้สึกได้ทันที ส่วนบางเพลงเราค่อย ๆ เรียนรู้ที่จะรักเมื่อเกิดการปรับจูนกัน <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌀"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+การได้เป็นพยานของบทเพลงทั้งเพลงตั้งแต่ต้นจนจบเป็นพรอย่างหนึ่ง เช่นเดียวกับท่อนฮุกของเพลงโปรดที่คุณอดไม่ได้ที่จะฮัมตาม คุณสามารถกลับไปสู่ความสุขนั้นได้เสมอ ผ่านกระบวนการหวานปนขมที่เราเรียกว่า “ความทรงจำ” <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎵"
+    title="musical_note"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b5.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💫"
+    title="dizzy"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ab.svg">
+
+และจงจำไว้ว่า — เมื่อทุกอย่างเริ่มมากเกินไป คุณสามารถเป็นตัวแทนของความสงบได้ด้วยการวางบทบาทของเข็มลง — ปล่อยการควบคุม และแสร้งทำเป็นว่าคุณคือดอกไม้ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌸"
+    title="cherry_blossom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f338.svg"> ในช่วงเวลานั้น ดนตรีจะไม่ใช่สิ่งที่กำหนดตัวคุณอีกต่อไป และความสงบจะผลิบานขึ้นอย่างเป็นธรรมชาติภายในตัวคุณ
+
+มัทธิว 6:28–30 เตือนใจเราว่า: ดอกไม้ในทุ่งนาไม่ได้ทำงานหรือปั่นด้าย แต่พวกมันก็ยังถูกประดับด้วยความงดงาม
+
+และหากมองในมุมวิทยาศาสตร์เล็กน้อย — “เหตุผลว่าทำไม” ก็มีความสำคัญ ตั้งแต่คลื่นไปสู่รูปแบบ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌊"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg">
+
+หากคุณเหนื่อยและต้องการพักผ่อน ลองหยุดถามว่า “ทำไม” สักครู่… แล้วเพียงแค่เป็นอยู่ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💜"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#จิตวิญญาณTok #ปรัชญา #ศรัทธาและวิทยาศาสตร์ #จากคลื่นสู่รูปแบบ #ความสงบภายใน #ช่วงเวลาแห่งสติ #ความตระหนักรู้ #ความทรงจำ #ปล่อยวาง #ปัญญาจากพระคัมภีร์ #มัทธิว6 #ดอกไม้แห่งทุ่งนา #ความคิดลึกซึ้ง #นักลึกลับสมัยใหม่ #ความเงียบ
+
+<a href="https://vimeo.com/1171496657">https://vimeo.com/1171496657</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 5:18 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> When_Life_Gets_Loud-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>5.29 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1480508050656727070 class=chatlog__message-container data-message-id=1480508050656727070><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, 9 March 2026 2:10 PM"><a href=#chatlog__message-container-1480508050656727070>9/03/2026 2:10 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>วิญญาณของคุณไม่ได้เลือกความเจ็บปวด <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💛"
+    title="yellow_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49b.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 05/12/2025 - VOID</strong>
+
+พระเยซูตรัสว่าผลย่อมเผยให้เห็นต้นไม้
+ดังนั้นผลแบบใดเกิดขึ้นจากการเชื่อว่า
+“วิญญาณของคุณเลือกความทุกข์นี้เอง”?
+
+#การแยกแยะ #พยานต่อตนเอง #ผู้แสวงหาความจริง #ความชัดเจนทางจิตวิญญาณ #การลบโปรแกรมความเชื่อ #พลังภายใน #การตระหนักรู้ #เส้นทางการเยียวยา #การโปรแกรมด้วยความกลัว #ความชัดเจนทางจิตใจ #การตื่นรู้ของส่วนรวม #การเสริมพลัง
+
+<a href="https://vimeo.com/1171702692">https://vimeo.com/1171702692</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 5:18 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Your_Soul_Didnt_Choose_Pain-Thai_Thailan.srt </a></div><div class=chatlog__attachment-generic-size>5.14 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1480866246093176843 class=chatlog__message-container data-message-id=1480866246093176843><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 10 March 2026 1:53 PM"><a href=#chatlog__message-container-1480866246093176843>10/03/2026 1:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ทางเลือกมีความถี่ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="📶"
+    title="signal_strength"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4f6.svg"> 23/08/2025 - แอลเบเนีย</strong>
+
+บางทางเลือกไม่ได้เกี่ยวกับอาหารเท่านั้น… แต่เกี่ยวกับความถี่
+สิ่งที่เราบริโภคเชื่อมโยงกับสิ่งที่เรายอมรับหรือทนต่อได้
+
+<a href="https://vimeo.com/1172086833">https://vimeo.com/1172086833</a></span><span class=chatlog__edited-timestamp title="Sunday, 29 March 2026 11:55 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Choices_Have_Frequencies-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>470 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1480872419664199751 class=chatlog__message-container data-message-id=1480872419664199751><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 10 March 2026 2:18 PM"><a href=#chatlog__message-container-1480872419664199751>10/03/2026 2:18 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>จากความรู้สึกร่วมสู่การควบคุม <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠"
+    title="⚠"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🧠"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 - VOID</strong>
+
+วิดีโอนี้อธิบายถึงรูปแบบการทำลายล้างที่ฉันสังเกตเห็นในชีวิตบนโซเชียลมีเดียบางชีวิต และเมื่อมองย้อนกลับไป ก็พบว่าเกิดขึ้นในหลายช่วงเวลาในชีวิตของฉันเช่นกัน
+
+มันมักเริ่มต้นด้วยความรู้สึกร่วม: ประสบการณ์ร่วมกัน ภาษาที่คุ้นเคย หรือความเข้าใจที่รู้สึกว่าจริง แต่เมื่อการมีส่วนร่วมเริ่มต้นขึ้น ความรู้สึกร่วมนั้นสามารถพลิกผันกลายเป็นการควบคุมได้ การเป็นส่วนหนึ่งกลายเป็นสิ่งที่มีเงื่อนไข การตั้งคำถามถูกลงโทษ การยอมจำนนเข้ามาแทนที่ความเข้าใจ
+
+เมื่อเวลาผ่านไป โครงสร้างนี้ได้รับการเสริมสร้างไม่เพียงแต่โดยผู้ที่นำมันเท่านั้น แต่ยังโดยผู้เข้าร่วมที่สะท้อนเรื่องราว ให้รางวัลแก่การทำตาม และขยายความห่างเหิน อำนาจเป็นประโยชน์ต่อผู้ที่อยู่ตรงกลาง ในขณะที่คนอื่น ๆ ถูกปกครองโดยปราศจากความเป็นส่วนหนึ่งอย่างแท้จริง
+
+พลวัตนี้ได้รับการยอมรับมานานแล้ว ดังที่พระคัมภีร์เตือนไว้ว่า:
+
+“กษัตริย์ของคนต่างชาติปกครองพวกเขา และผู้ที่ใช้อำนาจเหนือพวกเขาเรียกตัวเองว่ามีคุณูปการ”
+
+— ลูกา 22:25–26
+
+ในรูปแบบที่รุนแรงที่สุด รูปแบบนี้จะบานปลายไปสู่การมองว่าการทำลายตนเองเป็นทางออก
+
+นี่ไม่ใช่ปรัชญา
+นี่ไม่ใช่จิตวิญญาณ
+แต่มันเป็นรูปแบบทางจิตวิทยาที่ทำลายล้าง
+
+ความจริงไม่จำเป็นต้องนำไปสู่การทำลายตนเอง
+
+ชีวิตยังคงเป็นจุดอ้างอิง
+
+#จากการสั่นพ้องสู่การควบคุม #การควบคุมเชิงบีบบังคับ #อำนาจที่ตั้งอยู่บนความกลัว #พลวัตลัทธิ #การคิดแบบกลุ่ม #รูปแบบทางจิตวิทยา #การคิดเชิงวิพากษ์ #การตระหนักรู้ด้านสุขภาพจิต #อำนาจที่ปราศจากความยินยอม #การหยั่งรู้ #ปกป้องจิตใจของคุณ #การยืนยันคุณค่าของชีวิต #การตื่นรู้หรือการควบคุม #การตระหนักรู้สื่อสังคมออนไลน์</span><span class=chatlog__edited-timestamp title="Thursday, 26 March 2026 11:56 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Resonance_to_Control-Thai_Thailand.srt </a></div><div class=chatlog__attachment-generic-size>10.16 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1484611759687077978 class=chatlog__message-container data-message-id=1484611759687077978><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, 20 March 2026 9:57 PM"><a href=#chatlog__message-container-1484611759687077978>20/03/2026 9:57 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความหลงตัวเองคือระบบ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🧠"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖"
+    title="⚖"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔥"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 28/01/2026 - VOID
+(ฉบับขยาย — รวมฟุตเทจเพิ่มเติม 20 นาที)</strong>
+
+นี่ไม่ใช่แค่เรื่องส่วนตัว — แต่มันเกี่ยวกับความหลงตัวเองที่ทำงานในวงกว้าง
+
+ความหลงตัวเองเติบโตได้ด้วยการควบคุม ความสับสน การพึ่งพา และความเหนื่อยล้า เมื่อระบบขาดความรับผิดชอบ พวกมันก็จะเริ่มสะท้อนลักษณะเดียวกัน: การปั่นหัว การโยนความผิด การปิดปาก และการลงโทษสำหรับความเป็นอิสระ
+
+ในช่วงที่ฉันแยกทางกับสามี ฉันได้เห็นว่ากระบวนการทางกฎหมาย แรงกดดันทางการเงิน และเรื่องราวเกี่ยวกับสุขภาพจิต สามารถถูกนำมาใช้ในทางที่ผิดเพื่อลิดรอนอำนาจในการตัดสินใจด้วยตนเอง และทำให้ผู้คนติดอยู่ในวงจรที่ขยายตัว — วงจรที่บั่นทอนพลังงาน ตัวตน และความหวัง
+
+ฉันแบ่งปันเรื่องนี้ไม่ใช่เพราะความโกรธ แต่เพราะความชัดเจน เมื่อความหลงตัวเองกลายเป็นโครงสร้าง มันจะไม่เหมือนคนอีกต่อไป — มันดูเหมือนนโยบาย ขั้นตอน และ &quot;วิธีการทำงานของสิ่งต่างๆ&quot;
+
+หากคุณถูกทำให้สงสัยในความเป็นจริงของคุณ ถูกลงโทษเพราะพูดความจริง หรือถูกบังคับให้เอาชีวิตรอดแทนที่จะเยียวยาตัวเอง — คุณไม่ได้ผิดปกติ คุณแค่กำลังตอบสนองต่อระบบที่สร้างขึ้นโดยปราศจากความเห็นอกเห็นใจ
+
+การตระหนักรู้จะทำลายวงจรนั้น
+
+#นาร์ซิสซึม #การล่วงละเมิดเชิงระบบ #การควบคุมแบบนาร์ซิสซึม #ทำลายวงจร #การควบคุมแบบบีบบังคับ #การปั่นหัว #ความรุนแรงเชิงโครงสร้าง #ระบบที่ใช้เป็นอาวุธ #การละเมิดทางกฎหมาย #ความล้มเหลวของสถาบัน #การล่วงละเมิดทางจิตวิทยา #การตระหนักรู้เกี่ยวกับบาดแผลทางใจ #การบอกความจริง #เสียงของผู้รอดชีวิต #ความรับผิดชอบ #การแยกแยะ #การตื่นรู้ #เลือกความชัดเจน #ยุติวงจร
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1175566722">https://vimeo.com/1175566722</a></span><span class=chatlog__edited-timestamp title="Monday, 6 April 2026 10:29 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Narcissism_is_the_System_Thailand_caption.srt </a></div><div class=chatlog__attachment-generic-size>166.8 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490257518411120730 class=chatlog__message-container data-message-id=1490257518411120730><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 11:51 AM"><a href=#chatlog__message-container-1490257518411120730>5/04/2026 11:51 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>สวรรค์เป็นเรื่องของมุมมอง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌤"
+    title="🌤"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f324.svg">️ 16/01/2026 - ว่างเปล่า</strong>
+
+ไม่มีสิ่งใดรู้สึกอันตรายต่อจิตใจที่สงบ
+
+มัทธิว 6:25–26 &#183; มัทธิว 18:3 &#183; สดุดี 4:8
+
+#จิตใจสงบ #ช่วงเวลาแห่งความเงียบสงบ #ความนิ่ง #การรับรู้ที่อ่อนโยน
+
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490264427298291743 class=chatlog__message-container data-message-id=1490264427298291743><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 12:18 PM"><a href=#chatlog__message-container-1490264427298291743>5/04/2026 12:18 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>กรงไม่ใช่บ้านของคุณ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌅"
+    title="sunrise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f305.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🪶"
+    title="feather"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fab6.svg"> 06/04/2025 - ประเทศไทย</strong>
+
+ฉันได้ยินเพลงนี้ขณะเดินเล่นในตลาดแห่งหนึ่งในญี่ปุ่น ในวันธรรมดาๆ วันหนึ่ง… แต่มันทำให้ฉันหยุดชะงัก
+
+“จงเปิดโอกาสให้ตัวเองเติบโต… กรงไม่ใช่บ้านของคุณ”
+
+ฉันไม่ได้มองหาสัญญาณอะไรเลย แต่พระเจ้าทรงวางสัญญาณนั้นไว้ตรงหน้าฉัน
+
+เพลง “The Sparrow” ของ The Hunts กำลังเล่นอยู่ และเนื้อเพลงนั้นกระทบใจฉันอย่างลึกซึ้ง เหมือนเสียงกระซิบจากสวรรค์ท่ามกลางเสียงรบกวนของโลก
+
+และถึงแม้ว่าช่วงเวลานั้นจะเกิดขึ้นในญี่ปุ่น แต่คลิปวิดีโอนี้ถ่ายทำที่ถ้ำพระยานคร จังหวัดประจวบคีรีขันธ์ ประเทศไทย ในสถานที่ที่ความหมายของข้อความนั้นปรากฏออกมาอย่างแท้จริง
+
+มันทำให้ฉันนึกได้ว่าพระเจ้ามักจะทรงนำเรามาแบบนี้เสมอ – ออกจากความถูกจำกัด ออกจากความกลัว ออกจากพื้นที่เล็กๆ ที่เราเคยอยู่รอดมาได้…
+
+และเข้าสู่บางสิ่งที่กว้างใหญ่กว่า
+
+เหมือนเศษขนมปังในประเทศหนึ่ง
+
+เหมือนการเปลี่ยนแปลงครั้งใหญ่ในอีกประเทศหนึ่ง
+
+เราสร้างกรงขึ้นมาเพราะความสะดวกสบาย ตัวตนเก่าๆ และรูปแบบการเอาตัวรอด... แต่เราไม่ได้ถูกสร้างมาให้ถูกกักขัง
+
+กรงนั้นไม่ใช่บ้านของคุณ
+
+กางปีกของคุณออก
+
+เชื่อมั่นในเส้นทางนั้น
+
+เพลง “Sparrow” โดย The Hunts — เพลงจากวงดนตรีอินดี้โฟล์ค The Hunts ในอัลบั้ม Hibernating Heart คำบรรยายโดย TikTok
+
+#TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantToFly #HealingPath #GodIsSpeaking #AwakenedSoul
+
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490273506641051769 class=chatlog__message-container data-message-id=1490273506641051769><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 12:54 PM"><a href=#chatlog__message-container-1490273506641051769>5/04/2026 12:54 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="👁"
+    title="👁"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌳"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg">เมื่อความสงบลงตัว<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🍃"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg">✨<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌙"
+    title="crescent_moon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f319.svg"> 16/09/2025 - อัลบาเนีย</strong>
+
+เมื่อนั่งอยู่กับความเงียบสงบ ฉันก็ตระหนักได้ว่า เมื่อทุกอย่างลงตัว มันเหมือนกับว่าทุกอย่างลงตัวเช่นกัน
+
+#ความสงบ #ธรรมชาติ #สมาธิ #ความลงตัว #ชั้นต่างๆ #ความเงียบ #การทำสมาธิ #ความสงบ #วิดีโอธรรมชาติ #ช่วงเวลาแห่งความเงียบสงบ
+
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490325088187453551 class=chatlog__message-container data-message-id=1490325088187453551><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 4:19 PM"><a href=#chatlog__message-container-1490325088187453551>5/04/2026 4:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💧"
+    title="droplet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a7.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌱"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> การบำบัดด้วยน้ำจืด - ไม่ต้องใช้เครื่องกรอง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀"
+    title="☀"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg">️ 25/07/2025 - มอนเตเนโกร</strong>
+
+#บรรยากาศธรรมชาติ #ว่ายน้ำน้ำจืด #ชีวิตในทะเลสาบ #คนรักธรรมชาติ #สู่ป่า #การบำบัดกลางแจ้ง #บรรยากาศสงบ #ว่ายน้ำในธรรมชาติ #ธรรมชาติเยียวยา #ชีวิตในธรรมชาติ #การเชื่อมโยงกับธรรมชาติ #ช่วงเวลาแห่งการผจญภัย
+
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span><span class=chatlog__edited-timestamp title="Sunday, 5 April 2026 4:22 PM">(edited)</span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490335524496347188 class=chatlog__message-container data-message-id=1490335524496347188><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 5:01 PM"><a href=#chatlog__message-container-1490335524496347188>5/04/2026 5:01 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความสุขคือยาบำบัด ธรรมชาติคือความจริง <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 11/06/2025 - บัลแกเรีย</strong>
+
+ฉันไม่ได้มาที่นี่เพื่อพักผ่อนเฉยๆ — ฉันมาเพื่อระลึกถึงอดีต
+โลกกำลังเปลี่ยนแปลง และพวกเราก็เช่นกัน นี่คือการเปลี่ยนแปลงที่ดีขึ้นที่มาพร้อมกับการตื่นรู้ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌀"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎶"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> “Everywhere” – Niall Horan &amp; Anne-Marie
+
+ชีวิตในกระท่อมที่บัลแกเรีย — ที่ซึ่งฉันรู้สึกถึงความสงบ ความมีสติ และความสนุกสนานอีกครั้ง
+
+#5dshift #NewEarth #spiritualawaking #natureglowup #glowup ⁠bulgaria #wilderness #awakendsoul #cabininthewoods #lightworkers #forest #nature #spirituality #viral
+
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490390931428343958 class=chatlog__message-container data-message-id=1490390931428343958><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 8:41 PM"><a href=#chatlog__message-container-1490390931428343958>5/04/2026 8:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Open Fields, Clear Mind <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🎶"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 18/10/2025 - แอลเบเนีย</strong>
+
+บางครั้งสิ่งที่คุณต้องการก็แค่ทุ่งโล่งเงียบสงบ เพลงเพราะๆ และการเตือนใจว่าชีวิตยังคงงดงาม
+เสียงเพลงของ Fleetwood Mac คลออยู่เบื้องหลัง อากาศบริสุทธิ์อยู่ตรงหน้า และโลกที่ไม่ได้เรียกร้องอะไรจากคุณเลย — แค่ให้หยุดพักและหายใจ
+
+#vanlife #naturevibes #fleetwoodmac #peacefulmoments #fieldlife #cows #scenery #travelvibes #slowdown #mindfulmoments #sunsetvibes #australia #europe #musicandnature #freedomjourney #outdoorsoul #calmenergy #quietmoments #creativejourney #healingpath
+
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490397044886474844 class=chatlog__message-container data-message-id=1490397044886474844><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, 5 April 2026 9:05 PM"><a href=#chatlog__message-container-1490397044886474844>5/04/2026 9:05 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ก้าวเดินอย่างสงบสุขสู่ทุ่งนา <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌾"
+    title="ear_of_rice"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🐄"
+    title="cow2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f404.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🔔"
+    title="bell"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f514.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️ 16/08/2025 - อัลบาเนีย</strong>
+
+ก้าวออกไปสู่ทุ่งนา “ที่แท้จริง” — ไม่ใช่แค่ที่ใดที่หนึ่ง แต่เป็นที่ที่รอคุณอยู่
+ที่ซึ่งเวลาดูเหมือนจะคลายตัว อากาศหยุดนิ่ง
+และดนตรีเดียวที่ได้ยินคือเสียงกระดิ่งวัวอันแผ่วเบา
+
+#VanLife #NatureVibes #CowBells #PeacefulMoments #PastureLife #SlowLiving #OffGridLife #MorningVibes #FarmViews #MindfulLiving
+
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490609069336301679 class=chatlog__message-container data-message-id=1490609069336301679><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, 6 April 2026 11:08 AM"><a href=#chatlog__message-container-1490609069336301679>6/04/2026 11:08 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>เงินดอลลาร์ก็ร่ายมนตร์ได้เช่นกัน! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="💸"
+    title="money_with_wings"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b8.svg">✨ 01/12/2025 - VOID</strong>
+
+เช่นเดียวกับมนตร์ใดๆ พลังของมันขึ้นอยู่กับความเชื่อของคุณ — การมีส่วนร่วมของคุณ
+เงินดอลลาร์เป็นกลาง และระบบทุนนิยมก็เช่นกัน — พวกมันคือลูกของพระเจ้าที่ถูกกำหนดมาให้เหนือกว่าเสมอ
+แต่เราถูกปลูกฝังให้คิดว่าเงินดอลลาร์อยู่เหนือเรา
+และความเชื่อนั้นทำให้ขอบเขตความเป็นไปได้ของเราแคบลง
+ภาพลวงตาคือการคิดว่าเราเท่าเทียมกับระบบที่เราสร้างขึ้น
+หลายคนต่อสู้ภายในวงจรโดยไม่เคยตระหนักถึงพลังที่พวกเขามีอยู่เพียงแค่การก้าวออกจากวงจรนั้นไปเลย
+
+
+#dollarillusion #awakening #spiritualawakening #matrix #breakfree #truthseekers #poeticwisdom #visualstorytelling #fyp #foryou #foryoupage #viralvideo #deepthoughts #lifelessons #consciousness #selfrealization #mindsetshift #systemictruth #philosophy #metaphor #modernparable #thinkaboutit #collapseofillusion #innerfreedom #stephencooke
+
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490939154337632296 class=chatlog__message-container data-message-id=1490939154337632296><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 7 April 2026 8:59 AM"><a href=#chatlog__message-container-1490939154337632296>7/04/2026 8:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚐"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀"
+    title="☀"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg">️<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🕊"
+    title="🕊"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">️ This isn’t about showing off, it’s about showing the way back — to sovereignty, to peace, to nature. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 09/09/2025 - Albania</strong>
+
+Solar power, hot water, heat, and a small space on wheels. Not showing off — just showing that another way of living is possible, where peace remains within one’s control and its agency is not outsourced.
+
+#Sovereignty #ReclaimYourPeace #OwnYourLife #VanLife #OffGridLiving #IndependentLiving #SolarPower #WaterIsLife #BackToNature #SustainableLiving #SimpleLiving #NatureBoundaries #GodProvides #FaithAndFreedom #LivingInGrace
+
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490946289041543199 class=chatlog__message-container data-message-id=1490946289041543199><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 7 April 2026 9:28 AM"><a href=#chatlog__message-container-1490946289041543199>7/04/2026 9:28 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ความจริงรออยู่หลังกระจก <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🪞"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - VOID</strong>
+
+การเพิกเฉยต่อการทุจริตนั้นอันตราย
+
+การจ้องมองมันนานเกินไปก็อันตรายเช่นกัน
+
+ฉันได้แบ่งปันเครื่องมือในการดาวน์โหลดไฟล์ของเอปสไตน์โดยตรงจากแหล่งข้อมูลของกระทรวงยุติธรรมแล้ว — เพราะความจริงควรได้รับการรักษาไว้ตั้งแต่ต้น ไม่ใช่ถูกกรองผ่านเรื่องเล่าต่างๆ
+
+หากแหล่งข้อมูลล่มสลาย อะไรจะมาแทนที่?
+การคาดเดา การบิดเบือน การเปลี่ยนแปลง
+
+เก็บรักษาเอกสารอย่างมีความรับผิดชอบ
+
+ตรวจสอบอย่างชัดเจน
+อย่าปล่อยให้กระจกบิดเบือนคุณ
+
+ดาวน์โหลดจาก Google:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+ชุดที่ 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+ชุดที่ 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+ชุดที่ 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+ชุดที่ 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+ชุด 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+ชุดที่ 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#EpsteinFiles #Epstein #EpsteinCase #EpsteinInvestigation #MirrorOfEpstein #JusticeForVictims #Accountability #PublicRecords #Transparency #ExposeTheTruth #DoYourResearch #TruthMatters #JusticeMatters #StandForTruth #Awareness #SeekTheTruth
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a><a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490971515662110781 class=chatlog__message-container data-message-id=1490971515662110781><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 7 April 2026 11:08 AM"><a href=#chatlog__message-container-1490971515662110781>7/04/2026 11:08 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>จงอย่าลังเล <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌿"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🚐"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌊"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg"> 09/11/2025 - ตุรกี</strong>
+
+บางครั้ง การตัดสินใจที่ดีที่สุดก็ไม่ได้เกิดขึ้นโดยบังเอิญ
+ออกจากทางหลวง สู่ดินแดนที่ไม่รู้จัก
+
+#VanLife #LeaveItBetter #RoadStories #FreedomOnWheels #TravelRealTalk #SpontaneousJourney #NomadLife #AdventureAwaits #CinematicVibes #Bronson #ODESZA #TotallyEnormousExtinctDinosaurs #SaveYourselfFromDoubt #NeverGiveItUp #TrustTheJourney #FaithInMotion #FlowState #OffTheHighway #IntoTheUnknown #SelfTrust
+
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1491036139065446441 class=chatlog__message-container data-message-id=1491036139065446441><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, 7 April 2026 3:25 PM"><a href=#chatlog__message-container-1491036139065446441>7/04/2026 3:25 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌍"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg">✨ 24/08/2025 - Albani&#235;</strong>
+
+#klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
+
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment></div></div></div></div></div></div><div class=postamble><div class=postamble__entry>Exported 47 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
+
+<script id="chatlog-date-sorter">
+document.addEventListener("DOMContentLoaded", () => {
+  const ALLOWED_DISCORD_CDN_URL =
+    "https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512";
+
+  const chatlog = document.querySelector(".chatlog");
+  if (!chatlog) return;
+  document.body.id = "top";
+
+  const groups = Array.from(chatlog.querySelectorAll(".chatlog__message-group"));
+
+  function extractContentDate(group) {
+    const strong = group.querySelector(".chatlog__content strong");
+    if (!strong) return null;
+
+    const text = strong.textContent || "";
+    const match = text.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if (!match) return null;
+
+    const [, day, month, year] = match;
+    return new Date(Number(year), Number(month) - 1, Number(day));
+  }
+
+  function capitalizeWords(text) {
+    return text.replace(
+      /\b([a-z\u00c0-\u024f\u0400-\u04ff])([a-z\u00c0-\u024f\u0400-\u04ff]*)/gi,
+      (match, first, rest) => first.toUpperCase() + rest.toLowerCase()
+    );
+  }
+
+  function isEmojiLikeText(text) {
+    if (!text) return false;
+    try {
+      return /[\p{Extended_Pictographic}\u200D\uFE0F]/u.test(text);
+    } catch {
+      return /[\u2190-\u2BFF\u2600-\u27BF]/.test(text);
+    }
+  }
+
+  function isTinyDimension(value) {
+    if (!value) return false;
+    const num = Number.parseFloat(value);
+    return Number.isFinite(num) && num > 0 && num <= 64;
+  }
+
+  function isEmojiImage(img) {
+    if (!img) return false;
+
+    const className = (img.className || "").toString();
+    const alt = img.getAttribute("alt") || "";
+    const aria = img.getAttribute("aria-label") || "";
+    const src = img.getAttribute("src") || "";
+    const title = img.getAttribute("title") || "";
+    const widthAttr = img.getAttribute("width");
+    const heightAttr = img.getAttribute("height");
+
+    if (/\b(emoji|emote|twemoji|custom-emoji|chatlog__emoji|chatlog__custom-emoji)\b/i.test(className)) {
+      return true;
+    }
+
+    if (/\/emoji\/|\/emojis\/|\/twemoji\/|\/assets\/emojis\//i.test(src)) {
+      return true;
+    }
+
+    if (isEmojiLikeText(alt) || isEmojiLikeText(aria) || isEmojiLikeText(title)) {
+      return true;
+    }
+
+    const naturalWidth = img.naturalWidth || 0;
+    const naturalHeight = img.naturalHeight || 0;
+    const renderedWidth = img.width || 0;
+    const renderedHeight = img.height || 0;
+
+    const tinyByAttr = isTinyDimension(widthAttr) && isTinyDimension(heightAttr);
+    const tinyByNatural = naturalWidth > 0 && naturalHeight > 0 && naturalWidth <= 64 && naturalHeight <= 64;
+    const tinyByRendered = renderedWidth > 0 && renderedHeight > 0 && renderedWidth <= 48 && renderedHeight <= 48;
+
+    if ((tinyByAttr || tinyByNatural || tinyByRendered) && (alt || aria || title || /\bemoji\b/i.test(className))) {
+      return true;
+    }
+
+    return false;
+  }
+
+  function isDiscordCdnUrl(url) {
+    const value = (url || "").trim();
+    if (!value) return false;
+    if (value === ALLOWED_DISCORD_CDN_URL) return false;
+    return /^https?:\/\/cdn\.discordapp\.com\//i.test(value);
+  }
+
+  function getVimeoId(url) {
+    if (!url) return null;
+
+    const patterns = [
+      /vimeo\.com\/(?:video\/)?(\d+)/i,
+      /player\.vimeo\.com\/video\/(\d+)/i
+    ];
+
+    for (const pattern of patterns) {
+      const match = url.match(pattern);
+      if (match) return match[1];
+    }
+
+    return null;
+  }
+
+  function findVimeoAnchors(content) {
+    if (!content) return [];
+
+    const anchors = Array.from(content.querySelectorAll('a[href]'));
+    const seen = new Set();
+    const results = [];
+
+    for (const a of anchors) {
+      const href = (a.getAttribute("href") || "").trim();
+      const vimeoId = getVimeoId(href);
+      if (!vimeoId) continue;
+
+      const key = `${vimeoId}|${href}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      results.push({
+        anchor: a,
+        href,
+        vimeoId
+      });
+    }
+
+    return results;
+  }
+
+  function replaceCourtArchiveLinks() {
+    const courtUrl =
+      "https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html";
+
+    function buildCourtArchiveCard() {
+      const row = document.createElement("div");
+      row.className = "media-row court-archive-media-row";
+
+      const card = document.createElement("div");
+      card.className = "chatlog__attachment-generic court-archive-card";
+
+      const name = document.createElement("div");
+      name.className = "chatlog__attachment-generic-name";
+
+      const link = document.createElement("a");
+      link.href = courtUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Court Archive";
+
+      name.appendChild(link);
+      card.appendChild(name);
+      row.appendChild(card);
+      return row;
+    }
+
+    function normalizeText(value) {
+      return (value || "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function isCourtOnlyText(value) {
+      const t = normalizeText(value);
+      if (!t) return false;
+      if (/^Court archive:?$/i.test(t)) return true;
+      if (/^Court archive:\s*https?:\/\/\S+$/i.test(t)) return true;
+      if (t === courtUrl) return true;
+      if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(t)) return true;
+      return false;
+    }
+
+    document.querySelectorAll(".chatlog__message-group").forEach(group => {
+      const content = group.querySelector(".chatlog__content");
+      if (!content) return;
+
+      let foundCourtReference = false;
+
+      group.querySelectorAll(".court-archive-media-row").forEach(el => el.remove());
+
+      const exactCourtAnchors = Array.from(content.querySelectorAll("a[href]")).filter(a => {
+        const href = (a.getAttribute("href") || "").replace(/&amp;/g, "&").trim();
+        return href === courtUrl;
+      });
+
+      if (exactCourtAnchors.length) {
+        foundCourtReference = true;
+        exactCourtAnchors.forEach(a => {
+          const parent = a.parentElement;
+          if (parent && isCourtOnlyText(parent.textContent || "")) {
+            parent.remove();
+          } else {
+            a.remove();
+          }
+        });
+      }
+
+      const elements = Array.from(content.querySelectorAll("*"));
+      elements.forEach(el => {
+        const txt = normalizeText(el.textContent || "");
+        if (!txt) return;
+
+        if (/^Court archive:?$/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+
+        if (/^Court archive:\s*https?:\/\/\S+$/i.test(txt) && /court-of-illusions-trafficking/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+
+        if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+      });
+
+      const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let current;
+      while ((current = walker.nextNode())) {
+        textNodes.push(current);
+      }
+
+      textNodes.forEach(node => {
+        const value = node.nodeValue || "";
+        let nextValue = value;
+
+        if (/Court archive:/i.test(nextValue) || /court-of-illusions-trafficking/i.test(nextValue)) {
+          foundCourtReference = true;
+          nextValue = nextValue
+            .replace(/Court archive:\s*/gi, "")
+            .replace(/https?:\/\/[^\s<>"']*court-of-illusions-trafficking[^\s<>"']*/gi, "")
+            .replace(/\s{2,}/g, " ");
+        }
+
+        if (nextValue !== value) {
+          node.nodeValue = nextValue;
+        }
+      });
+
+      Array.from(content.querySelectorAll("p, div, span")).forEach(el => {
+        const txt = normalizeText(el.textContent || "");
+        if (!txt) return;
+        if (isCourtOnlyText(txt)) {
+          el.remove();
+        }
+      });
+
+      const hadCourt = foundCourtReference;
+      if (!hadCourt) return;
+
+      const subtitlesRow =
+        group.querySelector(".media-row") ||
+        (group.querySelector(".chatlog__attachment-generic") ? group.querySelector(".chatlog__attachment-generic").parentElement : null);
+
+      const card = buildCourtArchiveCard();
+
+      if (subtitlesRow && subtitlesRow.parentElement) {
+        subtitlesRow.insertAdjacentElement("beforebegin", card);
+      } else {
+        content.insertAdjacentElement("afterend", card);
+      }
+    });
+  }
+
+  function stripDiscordCdnNodes(root) {
+    if (!root) return;
+
+    const scope = root.querySelector(".chatlog");
+    if (!scope) return;
+
+    scope.querySelectorAll("[src], [href], source[src]").forEach(el => {
+      const src = el.getAttribute("src");
+      const href = el.getAttribute("href");
+
+      if (isDiscordCdnUrl(src) || isDiscordCdnUrl(href)) {
+        const attachment =
+          el.closest(".chatlog__attachment") ||
+          el.closest(".chatlog__embed") ||
+          el.closest(".chatlog__reference") ||
+          el.closest(".chatlog__attachment-generic");
+
+        if (attachment) {
+          attachment.remove();
+          return;
+        }
+
+        if (el.tagName === "IMG" || el.tagName === "VIDEO" || el.tagName === "SOURCE" || el.tagName === "AUDIO") {
+          el.remove();
+          return;
+        }
+
+        if (el.tagName === "A") {
+          const text = (el.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            el.remove();
+          } else {
+            el.replaceWith(document.createTextNode(text));
+          }
+        }
+      }
+    });
+
+    scope.querySelectorAll(".chatlog__content, .chatlog__markdown-preserve").forEach(block => {
+      const anchors = Array.from(block.querySelectorAll("a[href]"));
+      anchors.forEach(a => {
+        const href = a.getAttribute("href") || "";
+        if (isDiscordCdnUrl(href)) {
+          const text = (a.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            a.remove();
+          } else {
+            a.replaceWith(document.createTextNode(text));
+          }
+        }
+      });
+
+      const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let current;
+      while ((current = walker.nextNode())) {
+        textNodes.push(current);
+      }
+
+      textNodes.forEach(node => {
+        const value = node.nodeValue || "";
+        if (/https?:\/\/cdn\.discordapp\.com\//i.test(value)) {
+          node.nodeValue = value
+            .replace(
+              /https?:\/\/cdn\.discordapp\.com\/[^\s<>"']+/gi,
+              (match) => match === ALLOWED_DISCORD_CDN_URL ? match : ""
+            )
+            .replace(/\s{2,}/g, " ")
+            .trim();
+        }
+      });
+    });
+  }
+
+  function removeEmptyMediaRows(root) {
+    root.querySelectorAll(".media-row").forEach(row => {
+      if (!row.children.length) {
+        row.remove();
+      }
+    });
+  }
+
+  function buildVimeoCard(vimeoId, originalUrl) {
+    const wrap = document.createElement("div");
+    wrap.className = "veilocity-vimeo-card";
+
+    const iframeWrap = document.createElement("div");
+    iframeWrap.className = "veilocity-vimeo-embed";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://player.vimeo.com/video/${vimeoId}`;
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.title = "Vimeo video player";
+
+    iframeWrap.appendChild(iframe);
+    wrap.appendChild(iframeWrap);
+
+    const actions = document.createElement("div");
+    actions.className = "veilocity-vimeo-actions";
+
+    const button = document.createElement("a");
+    button.className = "veilocity-vimeo-button";
+    button.href = originalUrl;
+    button.target = "_blank";
+    button.rel = "noopener noreferrer";
+    button.textContent = "Watch on Vimeo";
+
+    actions.appendChild(button);
+    wrap.appendChild(actions);
+
+    return wrap;
+  }
+
+  function enhanceVimeoPosts() {
+    document.querySelectorAll(".chatlog__message-group").forEach(group => {
+      const content = group.querySelector(".chatlog__content");
+      if (!content) return;
+
+      const vimeoItems = findVimeoAnchors(content);
+      if (!vimeoItems.length) return;
+
+      group.querySelectorAll(".veilocity-vimeo-card, .veilocity-vimeo-stack").forEach(el => el.remove());
+
+      vimeoItems.forEach(item => {
+        item.anchor.classList.add("veilocity-vimeo-source-link");
+      });
+
+      const stack = document.createElement("div");
+      stack.className = "veilocity-vimeo-stack";
+
+      vimeoItems.forEach(item => {
+        const card = buildVimeoCard(item.vimeoId, item.href);
+        stack.appendChild(card);
+      });
+
+      const attachments = Array.from(group.querySelectorAll(".chatlog__attachment"));
+      const lastAttachment = attachments.length ? attachments[attachments.length - 1] : null;
+
+      if (lastAttachment) {
+        lastAttachment.insertAdjacentElement("afterend", stack);
+      } else {
+        content.insertAdjacentElement("afterend", stack);
+      }
+    });
+  }
+
+  groups.sort((a, b) => {
+    const dateA = extractContentDate(a);
+    const dateB = extractContentDate(b);
+
+    if (!dateA && !dateB) return 0;
+    if (!dateA) return 1;
+    if (!dateB) return -1;
+
+    return dateA - dateB;
+  });
+
+  chatlog.replaceChildren(...groups);
+
+  document.querySelectorAll(".chatlog__attachment-generic-name a").forEach(link => {
+    const href = (link.getAttribute("href") || "").toLowerCase();
+    const text = (link.textContent || "").trim().toLowerCase();
+
+    if (href.endsWith(".srt") || text.endsWith(".srt")) {
+      link.textContent = "Subtitles";
+    } else if (href.endsWith(".mp3") || text.endsWith(".mp3")) {
+      link.textContent = "MP3";
+    }
+  });
+
+  document.querySelectorAll(".chatlog__edited-timestamp").forEach(el => {
+    el.remove();
+  });
+
+  document.querySelectorAll(".chatlog__message-group").forEach(group => {
+    const strong = group.querySelector(".chatlog__content strong");
+    const header = group.querySelector(".chatlog__header");
+    const author = group.querySelector(".chatlog__author");
+    const authorName = group.querySelector(".chatlog__author-name");
+    const timestamp = group.querySelector(".chatlog__timestamp");
+    const container = group.querySelector(".chatlog__message-container");
+    const content = group.querySelector(".chatlog__content");
+    const preserve = group.querySelector(".chatlog__markdown-preserve");
+
+    if (!strong || !header) return;
+
+    const titleText = (strong.textContent || "").trim();
+    if (!titleText) return;
+
+    let titleRow = header.querySelector(".chatlog__title-row");
+    if (!titleRow) {
+      titleRow = document.createElement("div");
+      titleRow.className = "chatlog__title-row";
+      header.prepend(titleRow);
+    }
+
+    let titleEl = titleRow.querySelector(".chatlog__title-replacement");
+    if (!titleEl) {
+      titleEl = document.createElement("a");
+      titleEl.className = "chatlog__title-replacement";
+      titleRow.appendChild(titleEl);
+    }
+
+    titleEl.innerHTML = strong.innerHTML;
+
+    if (container && container.id) {
+      titleEl.setAttribute("href", `#${container.id}`);
+    }
+
+    if (author) author.remove();
+    if (authorName) authorName.remove();
+    if (timestamp) timestamp.remove();
+
+    strong.remove();
+
+    if (preserve) {
+      preserve.innerHTML = preserve.innerHTML
+        .replace(/^(?:\s|&nbsp;|<br\s*\/?>)+/i, "")
+        .replace(/^(?:\u00a0|\s)+/i, "");
+    }
+
+    if (content) {
+      content.innerHTML = content.innerHTML
+        .replace(/^(?:\s|&nbsp;|<br\s*\/?>)+/i, "")
+        .replace(/^(?:\u00a0|\s)+/i, "");
+    }
+  });
+
+  document.querySelectorAll(".chatlog__attachment-generic").forEach(card => {
+    const parent = card.parentElement;
+    if (parent) {
+      parent.classList.add("media-row");
+    }
+  });
+
+  document.querySelectorAll("audio").forEach(audio => {
+    const source = audio.querySelector("source");
+    const src = (source && source.getAttribute("src")) || audio.getAttribute("src") || "";
+    if (!src.toLowerCase().endsWith(".mp3")) return;
+
+    const wrapper = document.createElement("a");
+    wrapper.className = "mp3-download";
+    wrapper.href = src;
+    wrapper.setAttribute("download", "");
+    wrapper.textContent = "MP3";
+
+    const parent = audio.parentElement;
+    audio.replaceWith(wrapper);
+
+    if (parent) {
+      parent.classList.add("media-row");
+    }
+  });
+
+  document.querySelectorAll(".chatlog__content img, .chatlog__markdown-preserve img").forEach(img => {
+    if (isEmojiImage(img)) {
+      img.classList.add("veilocity-inline-emoji");
+    } else {
+      img.classList.remove("veilocity-inline-emoji");
+    }
+  });
+
+  replaceCourtArchiveLinks();
+  stripDiscordCdnNodes(document);
+  enhanceVimeoPosts();
+  stripDiscordCdnNodes(document);
+  removeEmptyMediaRows(document);
+
+  const style = document.createElement("style");
+  style.textContent = `
+    :root {
+      --bg-1: #e7d8c2;
+      --bg-2: #cbb79e;
+      --panel: rgba(255, 248, 235, 0.78);
+      --panel-2: rgba(245, 230, 210, 0.92);
+      --line: rgba(110, 88, 64, 0.18);
+      --line-strong: rgba(110, 88, 64, 0.32);
+      --text: #3c332c;
+      --muted: #6e5f4d;
+      --accent: #d86a3c;
+      --accent-2: #f08a2b;
+      --accent-3: #2f6e62;
+      --glow: 0 0 22px rgba(240, 138, 43, 0.14);
+      --radius: 16px;
+    }
+
+    html, body {
+      background:
+        radial-gradient(circle at top left, rgba(240, 138, 43, 0.16), transparent 32%),
+        radial-gradient(circle at top right, rgba(216, 106, 60, 0.12), transparent 28%),
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%) !important;
+      color: var(--text) !important;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      letter-spacing: 0.01em;
+    }
+
+    .chatlog {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 18px 48px;
+    }
+
+    .chatlog__message-group {
+      margin: 18px 0 !important;
+      padding: 16px 18px !important;
+      background: linear-gradient(180deg, rgba(255, 250, 241, 0.90), rgba(242, 225, 201, 0.95)) !important;
+      border: 1px solid var(--line) !important;
+      border-radius: var(--radius) !important;
+      box-shadow:
+        0 10px 24px rgba(60, 51, 44, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        var(--glow) !important;
+      backdrop-filter: blur(8px);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .chatlog__message-group:hover,
+    .chatlog__message-group:focus,
+    .chatlog__message-group:active {
+      background: linear-gradient(180deg, rgba(255, 250, 241, 0.90), rgba(242, 225, 201, 0.95)) !important;
+      border: 1px solid var(--line) !important;
+      box-shadow:
+        0 10px 24px rgba(60, 51, 44, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        var(--glow) !important;
+      transform: none !important;
+      filter: none !important;
+      color: var(--text) !important;
+    }
+
+    .chatlog__author-avatar-container,
+    .chatlog__avatar {
+      visibility: hidden !important;
+      width: 0 !important;
+      min-width: 0 !important;
+    }
+
+    .chatlog__messages {
+      margin-left: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__message,
+    .chatlog__message:hover,
+    .chatlog__message:focus,
+    .chatlog__message:active,
+    .chatlog__messages,
+    .chatlog__messages:hover,
+    .chatlog__messages:focus,
+    .chatlog__messages:active,
+    .chatlog__content,
+    .chatlog__content:hover,
+    .chatlog__content:focus,
+    .chatlog__content:active {
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__header {
+      display: block !important;
+      margin-bottom: 8px !important;
+      padding-bottom: 0 !important;
+    }
+
+    .chatlog__title-row {
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1.2 !important;
+    }
+
+    .chatlog__title-replacement,
+    .chatlog__title-replacement:link,
+    .chatlog__title-replacement:visited {
+      display: inline-block !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      font-size: 1.02rem !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      letter-spacing: 0 !important;
+      text-shadow: none !important;
+      text-decoration: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .chatlog__title-replacement:hover,
+    .chatlog__title-replacement:focus {
+      text-decoration: underline !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+    }
+
+    .chatlog__author-name {
+      color: var(--accent-3) !important;
+      font-weight: 600 !important;
+      text-shadow: 0 0 8px rgba(47, 110, 98, 0.10);
+    }
+
+    .chatlog__timestamp {
+      color: var(--muted) !important;
+      font-size: 0.78rem !important;
+    }
+
+    .chatlog__content {
+      color: var(--text) !important;
+      line-height: 1.6;
+      font-size: 0.98rem;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__markdown-preserve {
+      display: block !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      line-height: 1.6 !important;
+    }
+
+    .chatlog__content > .chatlog__markdown-preserve:first-child {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__header + .chatlog__content {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__content strong {
+      color: #2f2923 !important;
+    }
+
+    .chatlog__attachment,
+    .chatlog__embed,
+    .chatlog__reference,
+    .pre--multiline {
+      border-radius: 14px !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(255, 246, 233, 0.85) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .media-row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+
+    .media-row > .chatlog__attachment-generic,
+    .media-row > .mp3-download {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+      min-height: 0 !important;
+      height: 44px !important;
+      box-sizing: border-box !important;
+    }
+
+    .chatlog__attachment-generic {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 0 14px !important;
+      border-radius: 14px !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(250, 239, 223, 0.90) !important;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .chatlog__attachment-generic:hover {
+      background: rgba(252, 240, 223, 0.95) !important;
+      border-color: rgba(216, 106, 60, 0.28) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .chatlog__attachment-generic:active {
+      background: rgba(245, 231, 212, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.34) !important;
+      transform: translateY(0) !important;
+    }
+
+    .chatlog__attachment-generic-icon,
+    .chatlog__attachment-generic-size {
+      display: none !important;
+    }
+
+    .chatlog__attachment-generic-name {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 !important;
+      font-size: 0.95rem !important;
+      line-height: 1 !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .chatlog__attachment-generic-name a,
+    .chatlog__content a,
+    .chatlog__attachment-generic-name a:link,
+    .chatlog__content a:link,
+    .chatlog__attachment-generic-name a:visited,
+    .chatlog__content a:visited,
+    .chatlog__attachment-generic-name a:hover,
+    .chatlog__content a:hover,
+    .chatlog__attachment-generic-name a:focus,
+    .chatlog__content a:focus,
+    .chatlog__attachment-generic-name a:active,
+    .chatlog__content a:active {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-color: transparent !important;
+      transition: none !important;
+      filter: none !important;
+      transform: none !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .court-archive-media-row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 10px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .court-archive-media-row > .chatlog__attachment-generic {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+      min-height: 0 !important;
+      height: 44px !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-source-link {
+      display: none !important;
+    }
+
+    .veilocity-vimeo-stack {
+      display: grid !important;
+      gap: 12px !important;
+      width: min(720px, 100%) !important;
+      max-width: 100% !important;
+      margin-top: 12px !important;
+    }
+
+    .veilocity-vimeo-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      border-radius: 14px !important;
+      overflow: hidden !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(255, 246, 233, 0.85) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        0 8px 24px rgba(60, 51, 44, 0.18) !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-embed {
+      position: relative !important;
+      width: 100% !important;
+      aspect-ratio: 16 / 9 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-embed iframe {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+      border: 0 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-actions {
+      display: flex !important;
+      justify-content: flex-end !important;
+      padding: 10px 12px !important;
+      background: linear-gradient(180deg, rgba(255, 244, 230, 0.95), rgba(244, 228, 205, 0.98)) !important;
+      border-top: 1px solid rgba(110, 88, 64, 0.12) !important;
+    }
+
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:link,
+    .veilocity-vimeo-button:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 9px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      white-space: nowrap;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+    }
+
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .veilocity-vimeo-button:active {
+      transform: translateY(0) !important;
+    }
+
+    .preamble {
+      position: relative !important;
+      align-items: flex-start !important;
+      gap: 20px !important;
+      padding: 22px !important;
+      padding-right: 150px !important;
+      margin: 22px auto 28px !important;
+      max-width: 1200px;
+      min-height: 170px;
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(250, 240, 225, 0.88), rgba(236, 216, 190, 0.95));
+      border: 1px solid rgba(110, 88, 64, 0.16);
+      box-shadow:
+        0 18px 32px rgba(60, 51, 44, 0.14),
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 26px rgba(240, 138, 43, 0.08);
+      backdrop-filter: blur(8px);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .preamble:hover,
+    .preamble:focus,
+    .preamble:active {
+      background:
+        linear-gradient(180deg, rgba(250, 240, 225, 0.88), rgba(236, 216, 190, 0.95)) !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      box-shadow:
+        0 18px 32px rgba(60, 51, 44, 0.14),
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 26px rgba(240, 138, 43, 0.08) !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .preamble__guild-icon {
+      max-width: 280px !important;
+      max-height: 280px !important;
+      width: 280px !important;
+      height: auto !important;
+      display: block !important;
+      border-radius: 18px;
+      border: 1px solid rgba(110, 88, 64, 0.20);
+      box-shadow:
+        0 0 20px rgba(240, 138, 43, 0.08),
+        0 8px 20px rgba(60, 51, 44, 0.14);
+    }
+
+    .preamble__guild-icon-container {
+      max-width: 360px !important;
+    }
+
+    .preamble__entries-container {
+      margin-left: 1.25rem !important;
+      padding-top: 2px !important;
+    }
+
+    .preamble__entry {
+      color: var(--muted) !important;
+    }
+
+    .preamble__entry:first-child {
+      font-size: 0.72rem !important;
+      line-height: 1.05 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      color: rgba(60, 51, 44, 0.28) !important;
+      -webkit-text-fill-color: rgba(60, 51, 44, 0.28) !important;
+      text-shadow: none !important;
+      margin-bottom: 8px !important;
+      font-weight: 500 !important;
+    }
+
+    .preamble__entry:nth-child(2) {
+      font-size: 1.28rem !important;
+      font-weight: 700 !important;
+      color: var(--accent-3) !important;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 10px rgba(47, 110, 98, 0.08);
+      margin-top: 0 !important;
+    }
+
+    .flag-block {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      margin: 0 !important;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      z-index: 2;
+    }
+
+    .flag-image {
+      display: block;
+      width: 96px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid rgba(110, 88, 64, 0.20);
+      box-shadow:
+        0 8px 20px rgba(60, 51, 44, 0.12),
+        0 0 18px rgba(240, 138, 43, 0.05);
+      background: rgba(255,255,255,0.35);
+      padding: 4px;
+    }
+
+    .toc-block {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(110, 88, 64, 0.14);
+    }
+
+    .toc-title {
+      margin: 0 0 10px 0;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .toc-list {
+      margin: 0;
+      padding-left: 18px;
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    .toc-list li {
+      margin: 0 0 7px 0;
+      break-inside: avoid;
+    }
+
+    .toc-list a,
+    .toc-list a:link,
+    .toc-list a:visited {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.93rem;
+      line-height: 1.4;
+    }
+
+    .toc-list a:hover,
+    .toc-list a:focus {
+      text-decoration: underline !important;
+    }
+
+    @media (max-width: 900px) {
+      .toc-list {
+        columns: 1;
+      }
+    }
+
+    .post-return-wrap {
+      display: flex !important;
+      justify-content: flex-end !important;
+      margin-top: 14px !important;
+      padding-top: 6px !important;
+      width: 100% !important;
+    }
+
+    .post-return-link,
+    .post-return-link:link,
+    .post-return-link:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 7px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+
+    .post-return-link:hover,
+    .post-return-link:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .post-return-link:active {
+      transform: translateY(0) !important;
+    }
+
+    .btc-note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      max-width: 320px;
+      color: var(--text);
+      font-size: 0.92rem;
+      line-height: 1.45;
+      word-break: break-word;
+      background: linear-gradient(180deg, rgba(255, 244, 230, 0.95), rgba(244, 228, 205, 0.98));
+      border: 1px solid rgba(216, 106, 60, 0.28);
+      border-radius: 14px;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 18px rgba(240, 138, 43, 0.06);
+      transition: none !important;
+    }
+
+    .btc-note strong {
+      color: var(--accent);
+    }
+
+    .btc-address {
+      display: block;
+      margin-top: 8px;
+      padding: 10px 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      color: #4a392e;
+      background: rgba(240, 138, 43, 0.10);
+      border: 1px solid rgba(216, 106, 60, 0.20);
+      border-radius: 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-heading {
+      display: block;
+      margin-top: 14px;
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .contact-btn,
+    .contact-btn:link,
+    .contact-btn:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 9px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      white-space: nowrap;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+    }
+
+    .contact-btn:hover,
+    .contact-btn:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .contact-btn:active {
+      transform: translateY(0) !important;
+    }
+
+    .mp3-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border: 1px solid rgba(110, 88, 64, 0.14);
+      border-radius: 14px;
+      background: rgba(255, 246, 233, 0.85) !important;
+      text-decoration: none !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      font-weight: 500;
+      font-size: 0.95rem;
+      line-height: 1;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .mp3-download:hover {
+      background: rgba(252, 240, 223, 0.95) !important;
+      border-color: rgba(216, 106, 60, 0.28) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .mp3-download:active {
+      background: rgba(245, 231, 212, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.34) !important;
+      transform: translateY(0) !important;
+    }
+
+    .mp3-download:focus {
+      outline: none !important;
+      border-color: rgba(47, 110, 98, 0.35) !important;
+      box-shadow: 0 0 0 3px rgba(47, 110, 98, 0.12) !important;
+    }
+
+    .mp3-download__icon,
+    .mp3-download__text,
+    .mp3-download__title {
+      display: none !important;
+    }
+
+    img:not(.veilocity-inline-emoji),
+    video {
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(60, 51, 44, 0.18);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    img:not(.veilocity-inline-emoji):hover,
+    video:hover,
+    img:not(.veilocity-inline-emoji):focus,
+    video:focus,
+    img:not(.veilocity-inline-emoji):active,
+    video:active {
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(60, 51, 44, 0.18) !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .veilocity-inline-emoji,
+    .chatlog__content .veilocity-inline-emoji,
+    .chatlog__markdown-preserve .veilocity-inline-emoji {
+      display: inline-block !important;
+      width: 1.35em !important;
+      height: 1.35em !important;
+      max-width: 1.35em !important;
+      max-height: 1.35em !important;
+      min-width: 1.35em !important;
+      min-height: 1.35em !important;
+      vertical-align: -0.2em !important;
+      object-fit: contain !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 0.06em !important;
+      background: transparent !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__message-group * {
+      background-color: transparent !important;
+    }
+
+    .chatlog__message-group .pre--multiline,
+    .chatlog__message-group .chatlog__attachment,
+    .chatlog__message-group .chatlog__embed,
+    .chatlog__message-group .chatlog__reference,
+    .chatlog__message-group .chatlog__attachment-generic,
+    .chatlog__message-group .mp3-download,
+    .chatlog__message-group .post-return-link,
+    .chatlog__message-group .contact-btn,
+    .chatlog__message-group .veilocity-vimeo-card,
+    .chatlog__message-group .veilocity-vimeo-stack {
+      background: rgba(255, 246, 233, 0.85) !important;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent !important;
+      caret-color: var(--text) !important;
+    }
+
+    *:focus,
+    *:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:focus,
+    a:active,
+    .chatlog a,
+    .chatlog a:link,
+    .chatlog a:visited,
+    .chatlog a:hover,
+    .chatlog a:focus,
+    .chatlog a:active,
+    .chatlog__content a,
+    .chatlog__content a:link,
+    .chatlog__content a:visited,
+    .chatlog__content a:hover,
+    .chatlog__content a:focus,
+    .chatlog__content a:active,
+    .chatlog__attachment-generic-name a,
+    .chatlog__attachment-generic-name a:link,
+    .chatlog__attachment-generic-name a:visited,
+    .chatlog__attachment-generic-name a:hover,
+    .chatlog__attachment-generic-name a:focus,
+    .chatlog__attachment-generic-name a:active {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      background: transparent !important;
+      text-decoration: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+      filter: none !important;
+      transition: none !important;
+    }
+
+    .chatlog__message-group,
+    .chatlog__message-group:hover,
+    .chatlog__message-group:focus,
+    .chatlog__message-group:active,
+    .chatlog__attachment,
+    .chatlog__attachment:hover,
+    .chatlog__attachment:focus,
+    .chatlog__attachment:active,
+    .chatlog__attachment-generic,
+    .chatlog__attachment-generic:hover,
+    .chatlog__attachment-generic:focus,
+    .chatlog__attachment-generic:active,
+    .chatlog__embed,
+    .chatlog__embed:hover,
+    .chatlog__embed:focus,
+    .chatlog__embed:active,
+    .chatlog__reference,
+    .chatlog__reference:hover,
+    .chatlog__reference:focus,
+    .chatlog__reference:active,
+    .mp3-download,
+    .mp3-download:hover,
+    .mp3-download:focus,
+    .mp3-download:active,
+    .post-return-link,
+    .post-return-link:hover,
+    .post-return-link:focus,
+    .post-return-link:active,
+    .contact-btn,
+    .contact-btn:hover,
+    .contact-btn:focus,
+    .contact-btn:active,
+    .veilocity-vimeo-card,
+    .veilocity-vimeo-card:hover,
+    .veilocity-vimeo-card:focus,
+    .veilocity-vimeo-card:active,
+    .veilocity-vimeo-stack,
+    .veilocity-vimeo-stack:hover,
+    .veilocity-vimeo-stack:focus,
+    .veilocity-vimeo-stack:active,
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus,
+    .veilocity-vimeo-button:active {
+      filter: none !important;
+    }
+
+    ::selection {
+      background: rgba(240, 138, 43, 0.22);
+      color: #3c332c;
+    }
+  `;
+  document.head.appendChild(style);
+
+  const preamble = document.querySelector(".preamble");
+  const brandLine = document.querySelector(".preamble__entry:first-child");
+  const channelLine = document.querySelector(".preamble__entry:nth-child(2)");
+
+  if (brandLine) {
+    brandLine.textContent = "Veilocity";
+  }
+
+  if (channelLine) {
+    const cleaned = channelLine.textContent.replace(/^Text Channels\s*\/\s*/i, "").trim();
+    channelLine.textContent = capitalizeWords(cleaned);
+  }
+
+  if (preamble) {
+    let existing = preamble.querySelector(".flag-block");
+    if (existing) existing.remove();
+
+    const flagSrc = document.body.dataset.flagSrc;
+    if (flagSrc) {
+      const flagBlock = document.createElement("div");
+      flagBlock.className = "flag-block";
+
+      const img = document.createElement("img");
+      img.className = "flag-image";
+      img.src = flagSrc;
+      img.alt = "Country flag";
+
+      flagBlock.appendChild(img);
+      preamble.appendChild(flagBlock);
+    }
+
+    let existingToc = preamble.querySelector(".toc-block");
+    if (existingToc) existingToc.remove();
+
+    const titleLinks = Array.from(document.querySelectorAll(".chatlog__title-replacement"))
+      .filter(link => {
+        const text = (link.textContent || "").trim();
+        const href = (link.getAttribute("href") || "").trim();
+        return text && href.startsWith("#");
+      });
+
+    if (titleLinks.length) {
+      const tocBlock = document.createElement("div");
+      tocBlock.className = "toc-block";
+
+      const tocTitle = document.createElement("div");
+      tocTitle.className = "toc-title";
+      tocTitle.textContent = "Table of Contents";
+
+      const tocList = document.createElement("ol");
+      tocList.className = "toc-list";
+
+      titleLinks.forEach(link => {
+        const li = document.createElement("li");
+
+        const a = document.createElement("a");
+        a.href = link.getAttribute("href");
+        a.textContent = (link.textContent || "").trim();
+
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+
+      tocBlock.appendChild(tocTitle);
+      tocBlock.appendChild(tocList);
+
+      const entriesContainer = preamble.querySelector(".preamble__entries-container");
+      const btcNote = preamble.querySelector(".btc-note");
+
+      if (btcNote) {
+        btcNote.insertAdjacentElement("beforebegin", tocBlock);
+      } else if (entriesContainer) {
+        entriesContainer.appendChild(tocBlock);
+      } else {
+        preamble.appendChild(tocBlock);
+      }
+    }
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(
+      /^(Veilocity\s*-\s*)(.+)$/i,
+      (_, prefix, country) => prefix + capitalizeWords(country.trim())
+    );
+  }
+
+  const iconContainer = document.querySelector(".preamble__guild-icon-container");
+  if (iconContainer && !iconContainer.querySelector(".btc-note")) {
+    const note = document.createElement("div");
+    note.className = "btc-note";
+    note.innerHTML = `
+      QR code contains my Bitcoin address. If you feel called to support this work, you may donate using it.
+      <br><br>
+      <strong>BTC address:</strong>
+      <span class="btc-address">bc1qr5n4feh27pktff0cmu3m4n2zd70s466tsrxzk3</span>
+
+      <span class="contact-heading">Contact details:</span>
+      <div class="contact-links">
+        <a class="contact-btn" href="https://patreon.com/StephenChristopherCooke?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">Patreon</a>
+        <a class="contact-btn" href="https://www.tiktok.com/@veilocity_rising?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity_rising (TikTok)</a>
+        <a class="contact-btn" href="https://www.tiktok.com/@veilocity_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity (TikTok)</a>
+        <a class="contact-btn" href="https://github.com/veilocity717-blip/Veilocity" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="contact-btn" href="mailto:stephencooke.c@gmail.com">Gmail</a>
+      </div>
+    `;
+    iconContainer.appendChild(note);
+  }
+
+  document.querySelectorAll(".chatlog__message-group").forEach(group => {
+    let existingReturn = group.querySelector(".post-return-wrap");
+    if (existingReturn) existingReturn.remove();
+
+    const wrap = document.createElement("div");
+    wrap.className = "post-return-wrap";
+
+    const link = document.createElement("a");
+    link.className = "post-return-link";
+    link.href = "#top";
+    link.textContent = "Return to top";
+
+    wrap.appendChild(link);
+    group.appendChild(wrap);
+  });
+});
+</script>
