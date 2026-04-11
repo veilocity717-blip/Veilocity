@@ -15,7 +15,7 @@ No authority is asked for here. Nothing is demanded.
 Only offered.
 
 🕊️
-######################################################################################
+
 Patreon
 https://www.patreon.com/c/stephenchristophercooke/collections
 
@@ -46,8 +46,8 @@ https://mega.nz/folder/EqhjRZQD#REsKXwwW-UtJmTqSrX2EXg
 
 MEGA Download VOL 7
 https://mega.nz/folder/8zhCUbAb#CNPaxsmqwrBGiL6VTZm1Pg
-######################################################################################
-######################################################################################
+
+
 Epstein Files
 GOOGLE Download
 https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing
@@ -69,7 +69,6 @@ https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg
 
 MEGA Download #6
 https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA
-######################################################################################
 
 
 
