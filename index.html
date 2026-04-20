@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Veilocity Ark</title>
+
+  <script src="archives.js"></script>
+
+  <style>
+    :root {
+      --bg: #dcc0a0;
+      --panel: #e8dccb;
+      --panel-2: #efe5d7;
+      --card: #eadfce;
+      --card-2: #f1e8dc;
+      --text: #675f56;
+      --text-strong: #3f6f67;
+      --muted: #b4a696;
+      --border: #dbcab6;
+      --border-strong: #d2bea9;
+      --link: #4e847b;
+      --link-hover: #3f6f67;
+      --shadow: 0 10px 28px rgba(111, 88, 62, 0.10);
+      --shadow-soft: 0 6px 18px rgba(111, 88, 62, 0.08);
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --max-width: 1260px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.45;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    img {
+      object-fit: contain;
+      image-rendering: high-quality;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 30px 22px 42px;
+    }
+
+    .shell {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 22px 22px 26px;
+    }
+
+    .preamble {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .preamble__guild-icon {
+      width: 108px;
+      height: 108px;
+      border-radius: 22px;
+      object-fit: cover;
+      background: linear-gradient(180deg, #d8ccc0, #c8b79f);
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .preamble__entries-container {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--text-strong);
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 15px;
+      border: 1px solid var(--border-strong);
+      border-radius: 12px;
+      background: var(--panel-2);
+      color: var(--text);
+      font: inherit;
+      outline: none;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+    }
+
+    .search::placeholder {
+      color: #aa9d90;
+    }
+
+    .search:focus {
+      border-color: #bfa88c;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        0 0 0 4px rgba(191,168,140,0.15);
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+
+    .status,
+    .empty {
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--panel-2);
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 190px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, var(--card-2), var(--card));
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-strong);
+      box-shadow: 0 14px 30px rgba(111, 88, 62, 0.14);
+    }
+
+    .card-top {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .flag-link {
+      display: inline-block;
+      flex: 0 0 116px;
+      width: 116px;
+      height: 116px;
+      border-radius: 18px;
+      text-decoration: none;
+      transition: transform 0.16s ease, filter 0.16s ease;
+    }
+
+    .flag-link:hover {
+      text-decoration: none;
+      transform: translateY(-1px) scale(1.02);
+      filter: brightness(1.02);
+    }
+
+    .flag-link:focus-visible {
+      outline: 3px solid rgba(78, 132, 123, 0.30);
+      outline-offset: 4px;
+      border-radius: 22px;
+    }
+
+    .flag {
+      width: 116px;
+      height: 116px;
+      display: block;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--border-strong);
+      background: #d9c8b6;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .flag.fallback {
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      color: var(--text-strong);
+      font-weight: 600;
+    }
+
+    .card-head {
+      min-width: 0;
+      flex: 1;
+      padding-top: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 116px;
+    }
+
+    .country {
+      margin: 0 0 12px;
+      color: var(--text-strong);
+      font-size: 1.6rem;
+      line-height: 1.1;
+      word-break: break-word;
+    }
+
+    .version {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid #d7c4ae;
+      background: #eee2d2;
+      color: #7f7367;
+      font-size: 0.82rem;
+      width: fit-content;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      color: #8f8478;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    code.inline {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #f0e6d9;
+      color: #75695c;
+      font-family: Consolas, "Courier New", Courier, monospace;
+      font-size: 0.88em;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 18px 12px 28px;
+      }
+
+      .shell {
+        padding: 16px;
+      }
+
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+
+      .count {
+        white-space: normal;
+      }
+
+      .card-top {
+        flex-direction: column;
+      }
+
+      .flag-link,
+      .flag {
+        width: 132px;
+        height: 132px;
+        flex-basis: 132px;
+      }
+
+      .card-head {
+        min-height: auto;
+      }
+
+      .preamble {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <div class="preamble">
+        <img
+          class="preamble__guild-icon"
+          src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512"
+          alt="Veilocity"
+          loading="lazy"
+          onerror="this.style.display='none';"
+        />
+        <div class="preamble__entries-container">
+          <div class="eyebrow">Veilocity</div>
+          <h1 class="title">Arkchive Multilingual Passport</h1>
+          <div class="subtitle">
+            A unified archive portal for offline use.
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input id="search" class="search" type="text" placeholder="Search by country, folder, language, version..." />
+        <div id="count" class="count">Loading…</div>
+      </div>
+
+      <div id="status" class="status">Loading archives…</div>
+      <div id="grid" class="grid" hidden></div>
+      <div id="empty" class="empty" hidden>No archives matched your search.</div>
+
+      <div class="footer-note">
+        This is not entertainment — it’s remembrance.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const state = {
+      all: [],
+      filtered: [],
+      pending: 0,
+      loaded: 0
+    };
+
+    function normalizeText(value) {
+      return String(value || "")
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+    }
+
+    function safeJoin(...parts) {
+      return parts
+        .filter(Boolean)
+        .map((part, index) => {
+          part = String(part);
+          if (index === 0) return part.replace(/\/+$/g, "");
+          return part.replace(/^\/+|\/+$/g, "");
+        })
+        .join("/");
+    }
+
+    function stripTrailingVersion(text) {
+      return String(text || "").replace(/\sv\d{3}$/i, "").trim();
+    }
+
+    function versionFromFolder(folder) {
+      const m = String(folder || "").match(/\s(v\d{3})$/i);
+      return m ? m[1] : "";
+    }
+
+    function titleCaseGuess(input) {
+      return String(input || "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function fallbackCountryFromFolder(folder) {
+      let name = String(folder || "").replace(/^ark\s+/i, "");
+      name = stripTrailingVersion(name);
+      return titleCaseGuess(name);
+    }
+
+    function isCourtFile(filename) {
+      return /court/i.test(String(filename || ""));
+    }
+
+    function looksLikeHtml(filename) {
+      return /\.html?$/i.test(String(filename || ""));
+    }
+
+    function createFallbackFlag(text) {
+      const div = document.createElement("div");
+      div.className = "flag fallback";
+      div.textContent = (String(text || "?").trim()[0] || "?").toUpperCase();
+      div.title = text || "Flag";
+      return div;
+    }
+
+    function createFlagElement(flagPath, altText) {
+      if (flagPath) {
+        const img = document.createElement("img");
+        img.className = "flag";
+        img.alt = altText || "Flag";
+        img.loading = "lazy";
+        img.src = flagPath;
+        img.onerror = () => img.replaceWith(createFallbackFlag(altText));
+        return img;
+      }
+      return createFallbackFlag(altText);
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function updateCount() {
+      const count = document.getElementById("count");
+      count.textContent = `${state.filtered.length} archive${state.filtered.length === 1 ? "" : "s"}`;
+    }
+
+    function render() {
+      const grid = document.getElementById("grid");
+      const empty = document.getElementById("empty");
+      const status = document.getElementById("status");
+
+      grid.innerHTML = "";
+
+      if (!state.all.length && state.pending === 0) {
+        status.hidden = false;
+        status.textContent = "No archives were loaded. Check archives.js and each subfolder manifest.js.";
+        grid.hidden = true;
+        empty.hidden = true;
+        updateCount();
+        return;
+      }
+
+      if (!state.filtered.length) {
+        empty.hidden = false;
+        grid.hidden = false;
+        status.hidden = true;
+        updateCount();
+        return;
+      }
+
+      empty.hidden = true;
+      status.hidden = true;
+      grid.hidden = false;
+
+      for (const item of state.filtered) {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        const top = document.createElement("div");
+        top.className = "card-top";
+
+        const flagLink = document.createElement("a");
+        flagLink.className = "flag-link";
+        flagLink.href = item.htmlPath;
+        flagLink.title = `Open ${item.country}`;
+        flagLink.setAttribute("aria-label", `Open ${item.country} archive`);
+        flagLink.appendChild(createFlagElement(item.flagPath, item.country));
+
+        const head = document.createElement("div");
+        head.className = "card-head";
+
+        const versionHtml = item.version
+          ? `<div class="version">${escapeHtml(item.version)}</div>`
+          : "";
+
+        head.innerHTML = `
+          <h2 class="country">${escapeHtml(item.country)}</h2>
+          ${versionHtml}
+        `;
+
+        top.appendChild(flagLink);
+        top.appendChild(head);
+        card.appendChild(top);
+        grid.appendChild(card);
+      }
+
+      updateCount();
+    }
+
+    function applyFilter(query) {
+      const q = normalizeText(query);
+      if (!q) {
+        state.filtered = [...state.all];
+      } else {
+        state.filtered = state.all.filter(item => item.searchText.includes(q));
+      }
+      render();
+    }
+
+    function finalizeArchive(folder, manifest) {
+      const files = Array.isArray(manifest.files) ? manifest.files : [];
+      const htmlFiles = files.filter(looksLikeHtml).filter(name => !isCourtFile(name));
+
+      if (!htmlFiles.length) return;
+
+      const primaryFile =
+        manifest.primary_html && htmlFiles.includes(manifest.primary_html)
+          ? manifest.primary_html
+          : htmlFiles[0];
+
+      const country = manifest.country || fallbackCountryFromFolder(folder);
+      const language = manifest.language || country;
+      const version = manifest.version || versionFromFolder(folder) || "";
+      const flagFile = manifest.flag || "";
+      const flagPath = flagFile ? safeJoin(folder, flagFile) : "";
+      const htmlPath = safeJoin(folder, primaryFile);
+
+      state.all.push({
+        folder,
+        country,
+        language,
+        version,
+        flagPath,
+        htmlPath,
+        primaryFile,
+        description: manifest.description || `${language} portable archive`,
+        searchText: normalizeText([
+          folder,
+          country,
+          language,
+          version,
+          primaryFile,
+          manifest.description || ""
+        ].join(" "))
+      });
+    }
+
+    function loadManifestScripts() {
+      const status = document.getElementById("status");
+
+      if (!window.VEILOCITY_ARCHIVES || !Array.isArray(window.VEILOCITY_ARCHIVES.archives)) {
+        status.textContent = "Could not load archives.js or it does not contain VEILOCITY_ARCHIVES.";
+        updateCount();
+        return;
+      }
+
+      const folders = window.VEILOCITY_ARCHIVES.archives;
+
+      if (!folders.length) {
+        status.textContent = "No archive folders were listed in archives.js.";
+        updateCount();
+        return;
+      }
+
+      state.pending = folders.length;
+      status.textContent = `Loading ${folders.length} archive${folders.length === 1 ? "" : "s"}…`;
+
+      folders.forEach(folder => {
+        const script = document.createElement("script");
+        script.src = safeJoin(folder, "manifest.js");
+
+        script.onload = () => {
+          const manifestMap = window.VEILOCITY_MANIFESTS || {};
+          const manifest = manifestMap[folder];
+          if (manifest) finalizeArchive(folder, manifest);
+
+          state.loaded += 1;
+          state.pending -= 1;
+
+          if (state.pending === 0) {
+            state.all.sort((a, b) =>
+              a.country.localeCompare(b.country, undefined, { sensitivity: "base" })
+            );
+            state.filtered = [...state.all];
+            render();
+          }
+        };
+
+        script.onerror = () => {
+          console.warn(`Could not load manifest.js for ${folder}`);
+          state.loaded += 1;
+          state.pending -= 1;
+
+          if (state.pending === 0) {
+            state.all.sort((a, b) =>
+              a.country.localeCompare(b.country, undefined, { sensitivity: "base" })
+            );
+            state.filtered = [...state.all];
+            render();
+          }
+        };
+
+        document.head.appendChild(script);
+      });
+    }
+
+    document.getElementById("search").addEventListener("input", e => {
+      applyFilter(e.target.value);
+    });
+
+    window.addEventListener("DOMContentLoaded", loadManifestScripts);
+  </script>
+</body>
+</html>
