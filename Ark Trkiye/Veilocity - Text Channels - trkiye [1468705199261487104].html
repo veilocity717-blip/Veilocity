@@ -1525,8 +1525,9 @@ Bir &#231;oban &#246;zerkliği korur. Bir insan taciri ise &#246;zerkliğin kayb
 
 #RezonanstanKontrol #Ger&#231;ek&#214;nemlidir #ManeviAyırtEtme #ZorlayıcıKontrol #&#199;obanDeğilSahip
 
-<a href="https://vimeo.com/1184326308">https://vimeo.com/1184326308</a></span><span class=chatlog__edited-timestamp title="Saturday, 18 April 2026 12:25 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div></div><div class=postamble><div class=postamble__entry>Exported 58 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
-
+<a href="https://vimeo.com/1184326308">https://vimeo.com/1184326308</a></span><span class=chatlog__edited-timestamp title="Saturday, 18 April 2026 12:25 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div></div><div class=postamble><div class=postamble__entry>Exported 58 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div><script id="chatlog-date-sorter">
+document.addEventListener("DOMContentLoaded", () => {
+  const ALLOWED_DISCOR
 <script id="chatlog-date-sorter">
 document.addEventListener("DOMContentLoaded", () => {
   const ALLOWED_DISCORD_CDN_URL =
@@ -1968,10 +1969,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const href = (link.getAttribute("href") || "").toLowerCase();
     const text = (link.textContent || "").trim().toLowerCase();
 
-    if (href.endsWith(".srt") || text.endsWith(".srt")) {
-      link.textContent = "Subtitles";
-    } else if (href.endsWith(".mp3") || text.endsWith(".mp3")) {
-      link.textContent = "MP3";
+    if (
+      href.endsWith(".srt") || text.endsWith(".srt") ||
+      href.endsWith(".mp3") || text.endsWith(".mp3")
+    ) {
+      const card = link.closest(".chatlog__attachment-generic");
+      if (card) {
+        card.remove();
+      } else {
+        link.remove();
+      }
     }
   });
 
@@ -2043,19 +2050,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("audio").forEach(audio => {
     const source = audio.querySelector("source");
     const src = (source && source.getAttribute("src")) || audio.getAttribute("src") || "";
-    if (!src.toLowerCase().endsWith(".mp3")) return;
 
-    const wrapper = document.createElement("a");
-    wrapper.className = "mp3-download";
-    wrapper.href = src;
-    wrapper.setAttribute("download", "");
-    wrapper.textContent = "MP3";
+    if (src.toLowerCase().endsWith(".mp3")) {
+      const parent = audio.parentElement;
+      audio.remove();
 
-    const parent = audio.parentElement;
-    audio.replaceWith(wrapper);
-
-    if (parent) {
-      parent.classList.add("media-row");
+      if (parent && !parent.children.length) {
+        parent.remove();
+      }
     }
   });
 

@@ -3353,10 +3353,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const href = (link.getAttribute("href") || "").toLowerCase();
     const text = (link.textContent || "").trim().toLowerCase();
 
-    if (href.endsWith(".srt") || text.endsWith(".srt")) {
-      link.textContent = "Subtitles";
-    } else if (href.endsWith(".mp3") || text.endsWith(".mp3")) {
-      link.textContent = "MP3";
+    if (
+      href.endsWith(".srt") || text.endsWith(".srt") ||
+      href.endsWith(".mp3") || text.endsWith(".mp3")
+    ) {
+      const card = link.closest(".chatlog__attachment-generic");
+      if (card) {
+        card.remove();
+      } else {
+        link.remove();
+      }
     }
   });
 
@@ -3428,19 +3434,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("audio").forEach(audio => {
     const source = audio.querySelector("source");
     const src = (source && source.getAttribute("src")) || audio.getAttribute("src") || "";
-    if (!src.toLowerCase().endsWith(".mp3")) return;
 
-    const wrapper = document.createElement("a");
-    wrapper.className = "mp3-download";
-    wrapper.href = src;
-    wrapper.setAttribute("download", "");
-    wrapper.textContent = "MP3";
+    if (src.toLowerCase().endsWith(".mp3")) {
+      const parent = audio.parentElement;
+      audio.remove();
 
-    const parent = audio.parentElement;
-    audio.replaceWith(wrapper);
-
-    if (parent) {
-      parent.classList.add("media-row");
+      if (parent && !parent.children.length) {
+        parent.remove();
+      }
     }
   });
 
